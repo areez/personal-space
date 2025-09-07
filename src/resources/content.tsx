@@ -101,7 +101,7 @@ const about: About = {
       <>
       Areez Afsar Khan is an entrepreneur, independent technology consultant, and
       brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
-      Engineer with a Bachelor’s degree in Business Administration from North South
+      Engineer with a Bachelor's degree in Business Administration from North South
       University.
       <br />
       With over fifteen years of professional experience, Areez has worked with
@@ -109,6 +109,7 @@ const about: About = {
       Agrotech, Legaltech, and TravelTech. His expertise spans SaaS, customer
       experience design, brand and product development, and campaign activations
       for both his own ventures and his clients.
+      <br />
       In addition to his entrepreneurial journey, Areez has held notable leadership
       positions. He served as the 2023 National Vice President of JCI Bangladesh,
       co-chaired the Standing Committee on Software Products at BASIS (the national
@@ -119,7 +120,8 @@ const about: About = {
       communities, solidifying his reputation as an innovator, ecosystem builder, and
       industry leader.
     </>
-  ),
+    ),
+  }, // Add this closing brace that was missing
   },
   work: {
     display: true, // set to false to hide this section
@@ -191,10 +193,10 @@ const about: About = {
         title: "IBM DevOps & Software Engineering",
         description: (
           <>
-          <>"Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native development" </>,
-          <>"Built & deployed Python, microservices, using Docker, Kubernetes, OpenShift, Serverless "</>,
-          <>"Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability "</>,
-          </>,
+            "Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native development"<br/>
+            "Built & deployed Python, microservices, using Docker, Kubernetes, OpenShift, Serverless"<br/>
+            "Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability"
+          </>
         ),
         tags: [
           {
