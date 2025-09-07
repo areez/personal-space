@@ -49,7 +49,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my thoughts and ideas as a ${person.role}`,
-  headline: <>Benchmarking with the best to build better here</>,
+  headline: <>Benchmarking with the best globally to build better locally</>,
   featured: {
     display: true,
     title: (
@@ -99,14 +99,32 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Areez is an entrepreneur, independent technology consultant, and a brand strategist
-        from Dhaka, Bangladesh. He is an IBM certified Software Engineer graduation on Business
-        (majoring in Marketing from NSU), he has over fifteen years of professional experience and
-        expertise as an entrepreneur and having worked with significant local companies to develop
-        a multitude of engaging yet distinctive business models, startups on AgroTech and TravelTech, SaaS,
-        customer experience designs, intuitive brand and product development, and
-        campaign activations for himself and his clients.
+      Areez Afsar Khan is an entrepreneur, independent technology consultant, and
+      brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
+      Engineer with a Bachelor’s degree in Business Administration from North South
+      University.
       </>
+      <>
+      With over fifteen years of professional experience, Areez has worked with
+      leading local companies to develop innovative business models and startups in
+      Agrotech, Legaltech and TravelTech. His expertise spans SaaS, customer
+      experience design, brand and product development, and campaign activations
+      for both his own ventures and his clients.
+      </>
+      <>
+      In addition to his entrepreneurial journey, Areez has held notable leadership
+      positions. He served as the 2023 National Vice President of JCI Bangladesh,
+      co-chaired the Standing Committee on Software Products at BASIS (the national
+      trade body for software and IT services), and is a founding member of the
+      Bangladesh IT Pros Network (BITPN).
+      </>
+      <>
+      He remains actively engaged in mentoring and supporting professional
+      communities, solidifying his reputation as an innovator, ecosystem builder, and
+      industry leader.
+      </>
+       </>
+
     ),
   },
   work: {
