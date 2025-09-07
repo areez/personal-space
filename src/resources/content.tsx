@@ -98,7 +98,7 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-    <>
+      <>
       Areez Afsar Khan is an entrepreneur, independent technology consultant, and
       brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
       Engineer with a Bachelor’s degree in Business Administration from North South
