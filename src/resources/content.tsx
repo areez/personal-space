@@ -203,7 +203,7 @@ const about: About = {
           <>
           Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability
           </>,
-      ],
+        ],
         tags: [
           { name: "DevOps", icon: "workflow" },
           { name: "Cloud-Native", icon: "cloud" },
