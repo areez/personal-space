@@ -122,14 +122,12 @@ const about: About = {
       He remains actively engaged in mentoring and supporting professional
       communities, solidifying his reputation as an innovator, ecosystem builder, and
       industry leader.
-      </>
        </>
-
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work",
+    title: "Work Experience",
     experiences: [
       {
         company: "Valiant Technologies | Valiant Tech Ltd. ",
@@ -161,17 +159,18 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "CropRocket Limited",
+        timeframe: "2021 - Present",
+        role: "Director",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            A modern agriculture company that works to improve crop seed markets in Bangladesh
+            utilizing its own state-of-the-art seed testing labs, research, scientific expertise,
+            nurseries, and cultivation farms.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Helping farmers get ready to grow crops by giving them expert pre-cultivation
+            services and fulfill the commitment of building a sustainable agriculture ecosystem.
           </>,
         ],
         images: [],
@@ -180,31 +179,49 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "North South University",
+        description: <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Certifications",
     skills: [
       {
-        title: "Figma",
+        title: "IBM DevOps & Software Engineering",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native development </>
+          <>Built & deployed Python microservices using Docker, Kubernetes, OpenShift, Serverless </>
+          <>Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "DevOps",
+            icon: "workflow",
+          },
+          {
+            name: "Cloud-Native",
+            icon: "cloud",
+          },
+          {
+            name: "CI/CD",
+            icon: "repeat",
+          },
+          {
+            name: "Python Development",
+            icon: "code",
+          },
+          {
+            name: "Docker & Kubernetes",
+            icon: "container",
+          },
+          {
+            name: "Agile & Scrum",
+            icon: "users",
           },
         ],
         // optional: leave the array empty if you don't want to display images
