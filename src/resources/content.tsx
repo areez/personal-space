@@ -21,15 +21,15 @@ const newsletter: Newsletter = {
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
+    {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/areezafsar/",
+  },
   {
     name: "GitHub",
     icon: "github",
     link: "https://github.com/areez",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/in/areezafsar/",
   },
   {
     name: "Threads",
@@ -99,10 +99,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Areez Afsar Khan is an entrepreneur, an independent technology consultant,
-        and a brand strategist from Dhaka, Bangladesh. He has over fifteen years of
-        relevant industry expertise as an entrepreneur and has worked with significant
-        local companies to develop a multitude of engaging yet distinctive business models,
+        Areez is an entrepreneur, independent technology consultant, and a brand strategist
+        from Dhaka, Bangladesh. He is an IBM certified Software Engineer graduation on Business
+        (majoring in Marketing from NSU), he has over fifteen years of professional experience and
+        expertise as an entrepreneur and having worked with significant local companies to develop
+        a multitude of engaging yet distinctive business models, startups on AgroTech and TravelTech, SaaS,
         customer experience designs, intuitive brand and product development, and
         campaign activations for himself and his clients.
       </>
@@ -127,7 +128,8 @@ const about: About = {
           </>,
           <>
             Oversee cloud strategies, solution architectures, DevOps practices,
-            and technical presales  of its own products as well as services from partners like Microsoft, Google, and Odoo.
+            and technical presales  of home-grown software products as well as
+            services from partners like Microsoft, AWS, Google, Hoteza, and Odoo.
           </>,
         ],
         images: [
