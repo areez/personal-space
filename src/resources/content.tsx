@@ -205,12 +205,12 @@ const about: About = {
           </>,
         ],
         tags: [
-          { name: "DevOps", icon: "workflow" },
-          { name: "Cloud-Native", icon: "cloud" },
-          { name: "CI/CD", icon: "repeat" },
-          { name: "Python Development", icon: "code" },
-          { name: "Docker & Kubernetes", icon: "box" }, // safer fallback icon
-          { name: "Agile & Scrum", icon: "users" },
+          { name: "DevOps", icon: "rocket" }, // using rocket instead of workflow
+          { name: "Cloud-Native", icon: "globe" }, // using globe instead of cloud
+          { name: "CI/CD", icon: "arrowRight" }, // using arrowRight instead of repeat
+          { name: "Python Development", icon: "javascript" }, // using javascript instead of code
+          { name: "Docker & Kubernetes", icon: "grid" }, // using grid instead of box
+          { name: "Agile & Scrum", icon: "person" }, // using person instead of users
         ],
         images: [
           {
