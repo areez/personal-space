@@ -8,8 +8,8 @@ const person: Person = {
   role: "Entrepreneur & Tech Consultant",
   avatar: "/images/avatar.jpg",
   email: "hello@areezafsar.com",
-  location: "Asia/Dhaka", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bengali"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Dhaka", // IANA time zone identifier
+  languages: ["English", "Bengali"],
 };
 
 const newsletter: Newsletter = {
@@ -19,9 +19,7 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-    {
+  {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/areezafsar/",
@@ -34,7 +32,7 @@ const social: Social = [
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@areez_afsar",
+    link: "https://www.threads.net/@areez_afsar", // updated URL format
   },
   {
     name: "Email",
@@ -71,9 +69,9 @@ const home: Home = {
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where i lead tech projects and build cloud-first solutions.
-      Outside of work, i love experimenting with new ideas, writing
-      about tech, and exploring ways to solve real-world problems.
+      , where I lead tech projects and build cloud-first solutions. Outside of work, I
+      love experimenting with new ideas, writing about tech, and exploring ways to
+      solve real-world problems.
     </>
   ),
 };
@@ -99,58 +97,60 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-      Areez Afsar Khan is an entrepreneur, independent technology consultant, and
-      brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
-      Engineer with a Bachelor's degree in Business Administration from North South
-      University.
-      <br />
-      With over fifteen years of professional experience, Areez has worked with
-      leading local companies to develop innovative business models and startups in
-      Agrotech, Legaltech, and TravelTech. His expertise spans SaaS, customer
-      experience design, brand and product development, and campaign activations
-      for both his own ventures and his clients.
-      <br />
-      In addition to his entrepreneurial journey, Areez has held notable leadership
-      positions. He served as the 2023 National Vice President of JCI Bangladesh,
-      co-chaired the Standing Committee on Software Products at BASIS (the national
-      trade body for software and IT services), and is a founding member of the
-      Bangladesh IT Pros Network (BITPN).
-      <br />
-      He remains actively engaged in mentoring and supporting professional
-      communities, solidifying his reputation as an innovator, ecosystem builder, and
-      industry leader.
-    </>
+        Areez Afsar Khan is an entrepreneur, independent technology consultant, and
+        brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
+        Engineer with a Bachelor's degree in Business Administration from North
+        South University.
+        <br />
+        <br />
+        With over fifteen years of professional experience, Areez has worked with
+        leading local companies to develop innovative business models and startups
+        in Agrotech, Legaltech, and TravelTech. His expertise spans SaaS, customer
+        experience design, brand and product development, and campaign activations
+        for both his own ventures and clients.
+        <br />
+        <br />
+        In addition to his entrepreneurial journey, Areez has held notable leadership
+        positions. He served as the 2023 National Vice President of JCI Bangladesh,
+        co-chaired the Standing Committee on Software Products at BASIS (the
+        national trade body for software and IT services), and is a founding member
+        of the Bangladesh IT Pros Network (BITPN).
+        <br />
+        <br />
+        He remains actively engaged in mentoring and supporting professional
+        communities, solidifying his reputation as an innovator, ecosystem builder,
+        and industry leader.
+      </>
     ),
-  }, // Add this closing brace that was missing
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "Valiant Technologies | Valiant Tech Ltd. ",
+        company: "Valiant Technologies | Valiant Tech Ltd.",
         timeframe: "2012 - Present",
         role: "Founder & Managing Director",
         achievements: [
           <>
-            Founded Valiant Technologies in 2012, a software engineering and
-            IT services firm delivering scalable, cloud-first solutions solving business challenges.
+            Founded Valiant Technologies in 2012, a software engineering and IT
+            services firm delivering scalable, cloud-first solutions to solve business
+            challenges.
           </>,
           <>
-            Expertise in EPC contracting, engineering services, system integration,
-            and digital transformation for 200+ global clients.
+            Expertise in EPC contracting, engineering services, system integration, and
+            digital transformation for 200+ global clients.
           </>,
           <>
-            Oversee cloud strategies, solution architectures, DevOps practices,
-            and technical presales  of home-grown software products as well as
-            services from partners like Microsoft, AWS, Google, Hoteza, and Odoo.
+            Oversee cloud strategies, solution architectures, DevOps practices, and
+            technical presales for home-grown software products as well as partner
+            services from Microsoft, AWS, Google, Hoteza, and Odoo.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "Valiant Technologies",
             width: 16,
             height: 9,
           },
@@ -162,13 +162,13 @@ const about: About = {
         role: "Director",
         achievements: [
           <>
-            A modern agriculture company that works to improve crop seed markets in Bangladesh
-            utilizing its own state-of-the-art seed testing labs, research, scientific expertise,
+            A modern agriculture company that works to improve crop seed markets
+            in Bangladesh using state-of-the-art seed testing labs, research,
             nurseries, and cultivation farms.
           </>,
           <>
-            Helping farmers get ready to grow crops by giving them expert pre-cultivation
-            services and fulfill the commitment of building a sustainable agriculture ecosystem.
+            Helping farmers prepare for cultivation by providing expert pre-cultivation
+            services and promoting a sustainable agriculture ecosystem.
           </>,
         ],
         images: [],
@@ -176,65 +176,52 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Education",
     institutions: [
       {
         name: "North South University",
-        description: <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>,
+        description: (
+          <>Graduated with a Bachelor of Business Administration (BBA), majoring in Marketing.</>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Certifications",
     skills: [
       {
         title: "IBM DevOps & Software Engineering",
-        description: (
+        description: [
           <>
-            "Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native development"<br/>
-            "Built & deployed Python, microservices, using Docker, Kubernetes, OpenShift, Serverless"<br/>
-            "Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability"
-          </>
-        ),
+            Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native Development
+          </>,
+          <>
+            Built & deployed Python microservices using Docker, Kubernetes, OpenShift, Serverless
+          </>,
+          <>
+          Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability
+          </>,
+      ],
         tags: [
-          {
-            name: "DevOps",
-            icon: "workflow",
-          },
-          {
-            name: "Cloud-Native",
-            icon: "cloud",
-          },
-          {
-            name: "CI/CD",
-            icon: "repeat",
-          },
-          {
-            name: "Python Development",
-            icon: "code",
-          },
-          {
-            name: "Docker & Kubernetes",
-            icon: "container",
-          },
-          {
-            name: "Agile & Scrum",
-            icon: "users",
-          },
+          { name: "DevOps", icon: "workflow" },
+          { name: "Cloud-Native", icon: "cloud" },
+          { name: "CI/CD", icon: "repeat" },
+          { name: "Python Development", icon: "code" },
+          { name: "Docker & Kubernetes", icon: "box" }, // safer fallback icon
+          { name: "Agile & Scrum", icon: "users" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            alt: "IBM DevOps Certification",
             width: 16,
             height: 9,
           },
           {
             src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            alt: "IBM DevOps Project",
             width: 16,
             height: 9,
           },
@@ -242,28 +229,16 @@ const about: About = {
       },
       {
         title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
+        description: <>Building next-gen apps with Next.js + Once UI + Supabase.</>,
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "JavaScript", icon: "javascript" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Supabase", icon: "supabase" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Next.js Project",
             width: 16,
             height: 9,
           },
@@ -278,8 +253,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -287,8 +260,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -296,49 +267,15 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
   ],
 };
 
