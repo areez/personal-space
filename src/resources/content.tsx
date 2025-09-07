@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Areez Afsar",
   lastName: "Khan",
   name: "Areez Afsar Khan",
-  role: "Tech Entrepreneur, Consultant & Solution Architect",
+  role: "Entrepreneur & Tech Consultant",
   avatar: "/images/avatar.jpg",
   email: "hello@areezafsar.com",
   location: "Asia/Dhaka", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -71,8 +71,8 @@ const home: Home = {
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where i build cloud-first solutions and lead tech projects
-      outside of work, i love experimenting with new ideas, writing
+      , where i lead tech projects and build cloud-first solutions.
+      Outside of work, i love experimenting with new ideas, writing
       about tech, and exploring ways to solve real-world problems.
     </>
   ),
