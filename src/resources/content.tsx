@@ -191,7 +191,7 @@ const about: About = {
         title: "IBM DevOps & Software Engineering",
         description: (
           <>Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native development </>
-          <>Built & deployed `Python` microservices using Docker, Kubernetes, OpenShift, Serverless </>
+          <>Built & deployed `Python`, `microservices`, using `Docker`, Kubernetes, OpenShift, Serverless </>
           <>Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability </>
         ),
         tags: [
