@@ -98,32 +98,28 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-      <>
+    <>
       Areez Afsar Khan is an entrepreneur, independent technology consultant, and
       brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software
       Engineer with a Bachelor’s degree in Business Administration from North South
       University.
-      </>
-      <>
+      <br />
       With over fifteen years of professional experience, Areez has worked with
       leading local companies to develop innovative business models and startups in
-      Agrotech, Legaltech and TravelTech. His expertise spans SaaS, customer
+      Agrotech, Legaltech, and TravelTech. His expertise spans SaaS, customer
       experience design, brand and product development, and campaign activations
       for both his own ventures and his clients.
-      </>
-      <>
       In addition to his entrepreneurial journey, Areez has held notable leadership
       positions. He served as the 2023 National Vice President of JCI Bangladesh,
       co-chaired the Standing Committee on Software Products at BASIS (the national
       trade body for software and IT services), and is a founding member of the
       Bangladesh IT Pros Network (BITPN).
-      </>
-      <>
+      <br />
       He remains actively engaged in mentoring and supporting professional
       communities, solidifying his reputation as an innovator, ecosystem builder, and
       industry leader.
-       </>
-    ),
+    </>
+  ),
   },
   work: {
     display: true, // set to false to hide this section
