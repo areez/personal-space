@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Areez Afsar",
+  lastName: "Khan",
+  name: "Areez Afsar Khan",
+  role: "Student, Entrepreneur & Cloud Solution Architect",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "hello@areezafsar.com",
+  location: "Asia/Dhaka", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Bengali"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My weekly newsletter about technology and creativity</>,
 };
 
 const social: Social = [
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/areez",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/areezafsar/",
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@areez_afsar",
   },
   {
     name: "Email",
@@ -48,31 +48,32 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio website showcasing my thoughts and ideas as a ${person.role}`,
+  headline: <>Benchmarking with the best to build better here</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Areez</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured thoughts
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/benchmark-talent-build-global",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
+      I'm Areez, founder of{" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      , where i build cloud-first solutions and lead tech projects
+      <br /> outside of work, i love experimenting with new ideas, writing about tech,
+      <br /> and exploring ways to solve real-world problems.
     </>
   ),
 };
@@ -91,35 +92,42 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://outlook.office.com/bookwithme/user/48cc795072e74f5c997fec66dfc15db8@valiant.com.bd?anonymous&ismsaljsauthenabled&ep=plink",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Areez Afsar Khan is an entrepreneur, an independent technology consultant,
+        and a brand strategist from Dhaka, Bangladesh. He has over fifteen years of
+        relevant industry expertise as an entrepreneur and has worked with significant
+        local companies to develop a multitude of engaging yet distinctive business models,
+        customer experience designs, intuitive brand and product development, and
+        campaign activations for himself and his clients.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Work",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Valiant Technologies | Valiant Tech Ltd. ",
+        timeframe: "2012 - Present",
+        role: "Founder & Managing Director",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Founded Valiant Technologies in 2012, a software engineering and
+            IT services firm delivering scalable, cloud-first solutions solving business challenges.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Expertise in EPC contracting, engineering services, system integration,
+            and digital transformation for 200+ global clients.
+          </>,
+          <>
+            Oversee cloud strategies, solution architectures, DevOps practices,
+            and technical presales  of its own products as well as services from partners like Microsoft, Google, and Odoo.
           </>,
         ],
         images: [
@@ -223,7 +231,7 @@ const about: About = {
             height: 9,
           },
         ],
-      },  
+      },
     ],
   },
 };
