@@ -212,8 +212,8 @@ export default function About() {
                           <Media
                             src={experience.logo}
                             alt={`${experience.company} logo`}
-                            width={20}
-                            height={20}
+                            width={8}
+                            height={8}
                             radius="xs"
                           />
                         )}
@@ -282,8 +282,8 @@ export default function About() {
                           <Media
                             src={institution.logo}
                             alt={`${institution.name} logo`}
-                            width={20}
-                            height={20}
+                            width={8}
+                            height={8}
                             radius="xs"
                           />
                         )}
@@ -312,8 +312,8 @@ export default function About() {
                           <Media
                             src={skill.logo}
                             alt={`${skill.title} logo`}
-                            width={20}
-                            height={20}
+                            width={8}
+                            height={8}
                             radius="xs"
                           />
                         )}
