@@ -206,24 +206,28 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Row gap="8" vertical="center">
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="4">
+                      <Column width="2/12" horizontal="start">
                         {experience.logo && (
                           <Media
                             src={experience.logo}
                             alt={`${experience.company} logo`}
-                            width={20}
-                            height={20}
+                            width={32}
+                            height={32}
                             radius="xs"
                           />
                         )}
-                        <Text id={experience.company} variant="heading-strong-l">
+                      </Column>
+                      <Column width="7/12" horizontal="start">
+                        <Text variant="heading-strong-l">
                           {experience.company}
                         </Text>
-                      </Row>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
-                        {experience.timeframe}
-                      </Text>
+                      </Column>
+                      <Column width="3/12" horizontal="end">
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {experience.timeframe}
+                        </Text>
+                      </Column>
                     </Row>
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
@@ -276,17 +280,27 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth>
-                    <Row gap="8" vertical="center" marginBottom="m">
-                      {institution.logo && (
-                        <Media
-                          src={institution.logo}
-                          alt={`${institution.name} logo`}
-                          width={20}
-                          height={20}
-                          radius="xs"
-                        />
-                      )}
-                      <Text variant="heading-strong-l">{institution.name}</Text>
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
+                      <Column width="2/12" horizontal="start">
+                        {institution.logo && (
+                          <Media
+                            src={institution.logo}
+                            alt={`${institution.name} logo`}
+                            width={32}
+                            height={32}
+                            radius="xs"
+                          />
+                        )}
+                      </Column>
+                      <Column width="7/12" horizontal="start">
+                        <Text variant="heading-strong-l">{institution.name}</Text>
+                      </Column>
+                      <Column width="3/12" horizontal="end">
+                        {/* Add timeframe if available in your data structure */}
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {/* institution.timeframe */}
+                        </Text>
+                      </Column>
                     </Row>
                     <Text variant="body-default-m">{institution.description}</Text>
                   </Column>
@@ -303,17 +317,27 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill.title}-${index}`} fillWidth>
-                    <Row gap="8" vertical="center" marginBottom="m">
-                      {skill.logo && (
-                        <Media
-                          src={skill.logo}
-                          alt={`${skill.title} logo`}
-                          width={20}
-                          height={20}
-                          radius="xs"
-                        />
-                      )}
-                      <Text variant="heading-strong-l">{skill.title}</Text>
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
+                      <Column width="2/12" horizontal="start">
+                        {skill.logo && (
+                          <Media
+                            src={skill.logo}
+                            alt={`${skill.title} logo`}
+                            width={32}
+                            height={32}
+                            radius="xs"
+                          />
+                        )}
+                      </Column>
+                      <Column width="7/12" horizontal="start">
+                        <Text variant="heading-strong-l">{skill.title}</Text>
+                      </Column>
+                      <Column width="3/12" horizontal="end">
+                        {/* Add timeframe/date if available in your data structure */}
+                        <Text variant="heading-default-xs" onBackground="neutral-weak">
+                          {/* skill.timeframe or skill.date */}
+                        </Text>
+                      </Column>
                     </Row>
                     <Text variant="body-default-m" marginBottom="m">{skill.description}</Text>
                     {skill.tags && skill.tags.length > 0 && (
