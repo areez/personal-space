@@ -12,7 +12,10 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
-  HiOutlineCommandLine, // For a coding/terminal representation
+  HiOutlineCommandLine,
+  HiOutlineCloud, // Added for cloud services
+  HiOutlineShieldCheck, // Added for security
+  HiOutlineCog6Tooth, // Added for system administration
 } from "react-icons/hi2";
 
 import {
@@ -28,7 +31,9 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
-  SiPython, // Added python icon
+  SiPython,
+  SiMicrosoftazure, // Added for Azure
+  SiGoogle, // Added for Google
 } from "react-icons/si";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
@@ -60,12 +65,18 @@ export const iconLibrary: Record<string, IconType> = {
   nextjs: SiNextdotjs,
   supabase: SiSupabase,
   figma: SiFigma,
-  python: HiOutlineCommandLine, // Terminal/coding representation
+  python: HiOutlineCommandLine,
   facebook: FaFacebook,
   pinterest: FaPinterest,
   whatsapp: FaWhatsapp,
   reddit: FaReddit,
   telegram: FaTelegram,
+  // Added missing icons
+  azure: SiMicrosoftazure,
+  cloud: HiOutlineCloud,
+  google: SiGoogle,
+  systemAdmin: HiOutlineCog6Tooth,
+  security: HiOutlineShieldCheck,
 };
 
 export type IconLibrary = typeof iconLibrary;
