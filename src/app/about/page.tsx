@@ -329,14 +329,10 @@ export default function About() {
                           rel="noopener noreferrer"
                           variant="secondary"
                           size="s"
-                          <Button
-                            href={cert.credlyLink}
-                            variant="secondary"
-                            size="s"
-                            suffixIcon="arrowUpRightFromSquare"
-                          >
-                            Verify Credential
-                          </Button>
+                          suffixIcon="arrowUpRightFromSquare"
+                        >
+                          Verify Credential
+                        </Button>
                       </Row>
                     )}
                     {skill.tags && skill.tags.length > 0 && (
