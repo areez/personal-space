@@ -204,12 +204,24 @@ export default function About() {
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
+                // In the work experiences section (around line 200)
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                      <Row gap="12" vertical="center">
+                        {experience.logo && (
+                          <Media
+                            src={experience.logo}
+                            alt={`${experience.company} logo`}
+                            width={32}
+                            height={32}
+                            radius="s"
+                          />
+                        )}
+                        <Text id={experience.company} variant="heading-strong-l">
+                          {experience.company}
+                        </Text>
+                      </Row>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
@@ -253,46 +265,47 @@ export default function About() {
                     )}
                   </Column>
                 ))}
-              </Column>
-            </>
-          )}
 
-          {about.studies.display && (
-            <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
-                {about.studies.title}
-              </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+                // In the studies section (around line 260)
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
+                    <Row gap="12" vertical="center">
+                      {institution.logo && (
+                        <Media
+                          src={institution.logo}
+                          alt={`${institution.name} logo`}
+                          width={32}
+                          height={32}
+                          radius="s"
+                        />
+                      )}
+                      <Text id={institution.name} variant="heading-strong-l">
+                        {institution.name}
+                      </Text>
+                    </Row>
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
                   </Column>
                 ))}
-              </Column>
-            </>
-          )}
 
-          {about.technical.display && (
-            <>
-              <Heading
-                as="h2"
-                id={about.technical.title}
-                variant="display-strong-s"
-                marginBottom="40"
-              >
-                {about.technical.title}
-              </Heading>
-              <Column fillWidth gap="l">
+                // In the technical skills section (around line 280)
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">
-                      {skill.title}
-                    </Text>
+                    <Row gap="12" vertical="center">
+                      {skill.logo && (
+                        <Media
+                          src={skill.logo}
+                          alt={`${skill.title} logo`}
+                          width={32}
+                          height={32}
+                          radius="s"
+                        />
+                      )}
+                      <Text id={skill.title} variant="heading-strong-l">
+                        {skill.title}
+                      </Text>
+                    </Row>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>

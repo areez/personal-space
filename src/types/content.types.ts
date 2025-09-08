@@ -141,9 +141,12 @@ export interface About extends BasePageConfig {
     /** Title for the work experience section */
     title: string;
     /** List of work experiences */
+    // Add logo property to work experiences
     experiences: Array<{
       /** Company name */
       company: string;
+      /** Company logo path */
+      logo?: string;
       /** Timeframe of employment */
       timeframe: string;
       /** Role or job title */
@@ -162,31 +165,21 @@ export interface About extends BasePageConfig {
         height: number;
       }>;
     }>;
-  };
-  /** Studies/education section */
-  studies: {
-    /** Whether to display studies section */
-    display: boolean;
-    /** Title for the studies section */
-    title: string;
-    /** List of institutions attended */
+    // Add logo property to institutions
     institutions: Array<{
       /** Institution name */
       name: string;
+      /** Institution logo path */
+      logo?: string;
       /** Description of studies */
       description: React.ReactNode;
     }>;
-  };
-  /** Technical skills section */
-  technical: {
-    /** Whether to display technical skills section */
-    display: boolean;
-    /** Title for the technical skills section */
-    title: string;
-    /** List of technical skills */
+    // Add logo property to skills
     skills: Array<{
       /** Skill title */
       title: string;
+      /** Skill logo path */
+      logo?: string;
       /** Skill description */
       description?: React.ReactNode;
       /** Skill tags */

@@ -129,6 +129,7 @@ const about: About = {
     experiences: [
       {
         company: "Valiant Technologies / Valiant Tech Ltd.",
+        logo: "/images/logos/valiant-technologies.png",
         timeframe: "2014 - Present",
         role: "Founder & Managing Director",
         achievements: [
@@ -158,6 +159,7 @@ const about: About = {
       },
       {
         company: "FarmRoket™",
+        logo: "/images/logos/farmroket.png",
         timeframe: "2024 - Present",
         role: "Founder",
         achievements: [
@@ -172,6 +174,7 @@ const about: About = {
       },
       {
         company: "CropRocket Limited",
+        logo: "/images/logos/croprocket.png",
         timeframe: "2021 - Present",
         role: "Director",
         achievements: [
@@ -189,6 +192,7 @@ const about: About = {
       },
       {
         company: "Shuktara Travels",
+        logo: "/images/logos/shuktara-travels.png",
         timeframe: "2018 - Present",
         role: "Co-founder",
         achievements: [
@@ -202,6 +206,7 @@ const about: About = {
       },
       {
         company: "Microsoft Bangladesh",
+        logo: "/images/logos/microsoft.png",
         timeframe: "Nov 2013 - June 2014",
         role: "Intern - Business Evangelist Support (DX)",
         achievements: [
@@ -228,6 +233,7 @@ const about: About = {
     institutions: [
       {
         name: "North South University",
+        logo: "/images/logos/north-south-university.png",
         description: (
           <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>
         ),
@@ -240,6 +246,7 @@ const about: About = {
     skills: [
       {
         title: "IBM DevOps & Software Engineering",
+        logo: "/images/logos/ibm.png",
         description: [
           <>
           Mastered 6-months long, 15-courses curriculum on DevOps, Agile/Scrum, CI/CD, TDD/BDD, and
