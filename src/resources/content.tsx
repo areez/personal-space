@@ -320,11 +320,11 @@ const about: About = {
     title: "Leaderships",
     skills: [
       {
-        title: "Co-chariman, Software Products & SaaS Standing Committee, BASIS",
+        title: "Co-chariman, Software Products & SaaS, BASIS",
         logo: "/images/logos/basis.svg",
         description: [
           <>
-          Appointed as a Member in the Standing Committee for Software Product & SaaS at Bangladesh Association of Software and Information Services (BASIS) - the national trade body for Software & IT Enabled Service industry of Bangladesh currently having over 2,600+ member organizations..
+          Appointed in the Standing Committee for Software Products & SaaS at Bangladesh Association of Software and Information Services (BASIS) - the national trade body for Software & IT Enabled Service industry of Bangladesh currently having over 2,600+ member organizations..
           </>,
         ],
         images: [],
