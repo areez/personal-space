@@ -228,16 +228,16 @@ const about: About = {
         role: "Intern - Business Evangelist Support (Developer Experience)",
         achievements: [
           <>
-          Engaged student developer communities of public and private universities nationwide in app development, testing, and contests.
+          Engaged student developer communities in public and private universities nationwide in app development, testing, and contests
           </>,
           <>
-          Promoted app development and supported student developers through workshops.
+          Promoted early mobile app development during the rise of smartphones, mentoring student developers and leading a workshop that published 100 apps in a daylong hackathon.
           </>,
           <>
-          Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
+          Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students
           </>,
           <>
-          Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
+          Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners
           </>,
         ],
         images: [],
@@ -252,7 +252,7 @@ const about: About = {
         name: "North South University",
         logo: "/images/logos/north-south-university.svg", // Changed from .png to .svg
         description: (
-          <>Bachelor of Business Administration (BBA) degree with a major in Marketing</>
+          <>Earned a Bachelor of Business Administration (BBA) degree, majoring in Marketing</>
         ),
       },
     ],
