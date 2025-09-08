@@ -267,6 +267,69 @@ export default function About() {
               </Column>
             </>
           )}
+
+          {about.studies.display && (
+            <>
+              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
+                {about.studies.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.studies.institutions.map((institution, index) => (
+                  <Column key={`${institution.name}-${index}`} fillWidth>
+                    <Row gap="12" vertical="center" marginBottom="m">
+                      {institution.logo && (
+                        <Media
+                          src={institution.logo}
+                          alt={`${institution.name} logo`}
+                          width={32}
+                          height={32}
+                          radius="s"
+                        />
+                      )}
+                      <Text variant="heading-strong-l">{institution.name}</Text>
+                    </Row>
+                    <Text variant="body-default-m">{institution.description}</Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.technical.display && (
+            <>
+              <Heading as="h2" id={about.technical.title} variant="display-strong-s" marginBottom="m">
+                {about.technical.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.technical.skills.map((skill, index) => (
+                  <Column key={`${skill.title}-${index}`} fillWidth>
+                    <Row gap="12" vertical="center" marginBottom="m">
+                      {skill.logo && (
+                        <Media
+                          src={skill.logo}
+                          alt={`${skill.title} logo`}
+                          width={32}
+                          height={32}
+                          radius="s"
+                        />
+                      )}
+                      <Text variant="heading-strong-l">{skill.title}</Text>
+                    </Row>
+                    <Text variant="body-default-m" marginBottom="m">{skill.description}</Text>
+                    {skill.tags && skill.tags.length > 0 && (
+                      <Row wrap gap="8">
+                        {skill.tags.map((tag, tagIndex) => (
+                          <Tag key={tagIndex} size="s">
+                            {tag.name}
+                          </Tag>
+                        ))}
+                      </Row>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
         </Column>
       </Row>
     </Column>
