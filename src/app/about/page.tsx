@@ -207,14 +207,14 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Row gap="12" vertical="center">
+                      <Row gap="8" vertical="center">
                         {experience.logo && (
                           <Media
                             src={experience.logo}
                             alt={`${experience.company} logo`}
-                            width={32}
-                            height={32}
-                            radius="s"
+                            width={20}
+                            height={20}
+                            radius="xs"
                           />
                         )}
                         <Text id={experience.company} variant="heading-strong-l">
@@ -276,14 +276,14 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth>
-                    <Row gap="12" vertical="center" marginBottom="m">
+                    <Row gap="8" vertical="center" marginBottom="m">
                       {institution.logo && (
                         <Media
                           src={institution.logo}
                           alt={`${institution.name} logo`}
-                          width={32}
-                          height={32}
-                          radius="s"
+                          width={20}
+                          height={20}
+                          radius="xs"
                         />
                       )}
                       <Text variant="heading-strong-l">{institution.name}</Text>
@@ -303,14 +303,14 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill.title}-${index}`} fillWidth>
-                    <Row gap="12" vertical="center" marginBottom="m">
+                    <Row gap="8" vertical="center" marginBottom="m">
                       {skill.logo && (
                         <Media
                           src={skill.logo}
                           alt={`${skill.title} logo`}
-                          width={32}
-                          height={32}
-                          radius="s"
+                          width={20}
+                          height={20}
+                          radius="xs"
                         />
                       )}
                       <Text variant="heading-strong-l">{skill.title}</Text>
