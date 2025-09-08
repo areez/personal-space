@@ -45,9 +45,9 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}'s Personal Space`,
   description: `Portfolio website showcasing my thoughts and ideas as a ${person.role}`,
-  headline: <>Benchmarking with the best globally to build better locally</>,
+  headline: <>Benchmarking with the best globally, to build better locally</>,
   featured: {
     display: true,
     title: (
@@ -69,8 +69,8 @@ const home: Home = {
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I lead tech projects and build cloud-first solutions. Outside of work, I
-      love experimenting with new ideas, writing about tech, and exploring ways to
+      , where I lead a team of product engineers and build cloud-first solutions. Outside of work, I
+      love experimenting with new ideas, writing about tech, engaging with the community, and exploring ways to
       solve real-world problems.
     </>
   ),
@@ -157,6 +157,19 @@ const about: About = {
         ],
       },
       {
+        company: "FarkRoket",
+        timeframe: "2024 - Present",
+        role: "Founder",
+        achievements: [
+          <>
+           End-to-end farming supply chain solution hosted on Blockchai ensuring quality,
+           safety, and transparency from farm to fork, supported by market intelligence
+           to enhance the value of fresh produce.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "CropRocket Limited",
         timeframe: "2021 - Present",
         role: "Director",
@@ -169,6 +182,19 @@ const about: About = {
           <>
             Helping farmers prepare for cultivation by providing expert pre-cultivation
             services and promoting a sustainable agriculture ecosystem.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Shuktara Travels",
+        timeframe: "2018 - Present",
+        role: "Co-founder",
+        achievements: [
+          <>
+            Online travel agency offering efficient outbound travel solutions
+            for B2B & B2C utilizing aggregated flight APIs and offering
+            reservation services for travel agents, SMEs, and corporates.
           </>,
         ],
         images: [],
