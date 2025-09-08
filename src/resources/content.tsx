@@ -242,11 +242,11 @@ const about: About = {
         title: "IBM DevOps & Software Engineering",
         description: [
           <>
-          Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native Development, building &
-          deploying Python microservices using Docker, Kubernetes, OpenShift, Serverless, developing
-          foundational applications utilizing IBM Watson AI libraries & ML capabilities and have
-          applied Git/GitHub, Linux scripting, automation, security, monitoring & observability
-          to these applications.
+          Mastered 6-months long, 15-courses curriculum on DevOps, Agile/Scrum, CI/CD, TDD/BDD, and
+          Cloud-Native Development, building & deploying Python microservices using Docker, Kubernetes,
+          OpenShift, Serverless, developing foundational applications utilizing IBM Watson AI
+          libraries & ML capabilities and have applied Git/GitHub, Linux scripting, automation,
+          security, monitoring & observability to these applications.
           </>,
         ],
         tags: [
@@ -257,29 +257,17 @@ const about: About = {
           { name: "Docker & Kubernetes", icon: "grid" }, // using grid instead of box
           { name: "Agile & Scrum", icon: "person" }, // using person instead of users
         ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "IBM DevOps Certification",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "IBM DevOps Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         title: "Microsoft Certified: Azure Fundamentals",
         description: <>Demonstrated foundational level knowledge of cloud services and
         how those services are provided with Microsoft Azure.</>,
         tags: [
-          { name: "JavaScript", icon: "javascript" },
-          { name: "Next.js", icon: "nextjs" },
-          { name: "Supabase", icon: "supabase" },
+          { name: "Microsoft Azure", icon: "azure" },
+          { name: "Cloud Services", icon: "cloud" },
+          { name: "Cloud Computing", icon: "globe" },
+          { name: "Azure Portal", icon: "document" },
         ],
         images: [],
       },
@@ -289,18 +277,12 @@ const about: About = {
         hands-on, practice-based assessments, being competent in foundational skills, including
         shell commands, networking, system administration, and security.</>,
         tags: [
-          { name: "JavaScript", icon: "javascript" },
-          { name: "Next.js", icon: "nextjs" },
-          { name: "Supabase", icon: "supabase" },
+          { name: "IT Support", icon: "google" },
+          { name: "System Administration", icon: "systemAdmin" },
+          { name: "Network Security", icon: "security" },
+          { name: "Shell Commands", icon: "python" },
         ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Next.js Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
