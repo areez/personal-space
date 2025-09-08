@@ -259,7 +259,7 @@ const about: About = {
   },
   technical: {
     display: true,
-    title: "Certifications",
+    title: "Certification",
     skills: [
       {
         title: "IBM DevOps & Software Engineering",
@@ -317,7 +317,7 @@ const about: About = {
   },
   leadership: {
     display: true,
-    title: "Leaderships",
+    title: "Leadership",
     skills: [
       {
         title: "Co-chariman, Software Products & SaaS, BASIS",
