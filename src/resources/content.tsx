@@ -69,9 +69,9 @@ const home: Home = {
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I lead a team of product engineers and build cloud-first solutions. Outside of work, I
-      love experimenting with new ideas, writing about tech, engaging with the community, and exploring ways to
-      solve real-world problems.
+      , where I lead a team of product engineers and following a cloud-first approach to build scalable,
+      secure, and user-centric solutions. Outside of work, I love experimenting with new ideas,
+      writing about tech, engaging with the community, and exploring ways to solve real-world business problems.
     </>
   ),
 };
@@ -228,10 +228,10 @@ const about: About = {
         role: "Intern - Business Evangelist Support (Developer Experience)",
         achievements: [
           <>
-          Engaged student developer communities in public and private universities nationwide in app development, testing, and contests
+          Engaged student developer communities in all public and private universities in app idea generations, development, testing, and hackathons
           </>,
           <>
-          Promoted early mobile app development during the rise of smartphones, mentoring student developers and leading a workshop that published 100 apps in a daylong hackathon.
+          Promoted early mobile app development initiaties in communities addressing the rise of smartphones, mentoring student developers and orchestrating hackathons in engineering universities nationwide - one of which published 100 apps in a day.
           </>,
           <>
           Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students
