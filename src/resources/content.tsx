@@ -315,6 +315,62 @@ const about: About = {
       },
     ],
   },
+  technical: {
+    display: true,
+    title: "Leaderships",
+    skills: [
+      {
+        title: "Co-chariman, Software Products & SaaS Standing Committee, BASIS",
+        logo: "/images/logos/basis.svg",
+        description: [
+          <>
+          Appointed as a Member in the Standing Committee for Software Product & SaaS at Bangladesh Association of Software and Information Services (BASIS) - the national trade body for Software & IT Enabled Service industry of Bangladesh currently having over 2,600+ member organizations..
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "Joint Member Secretary, NSUAA",
+        logo: "/images/logos/nsuaa.svg",
+        description: [
+          <>
+          Partronizing the alma mater North South University Alumni Association and serving as the Joint Member Secretary appointed in 2025
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "2023 National Vice President, JCI Bangladesh",
+        logo: "/images/logos/jcibd.svg",
+        description: [
+          <>
+          A global leadership development organization for young people aged between 18 and 40 where I served in the national governing body, contributing towards multiple leaership develop initiatives as well as served  as a JCI Trainer
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "Life Member, BITPN",
+        logo: "/images/logos/jcibd.svg",
+        description: [
+          <>
+          Bangladesh IT Professionals Network (BITPN) is a leading hub of IT professionals in Bangladesh
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "President (2011-2013), NSUCEC",
+        logo: "/images/logos/jcibd.svg",
+        description: [
+          <>
+          Served a 2-year tenure as the President of the largest student activity club of North South University
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
 };
 
 const blog: Blog = {
