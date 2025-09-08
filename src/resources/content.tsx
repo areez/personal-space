@@ -130,7 +130,7 @@ const about: About = {
       {
         company: "Valiant Technologies / Valiant Tech Ltd.",
         logo: "/images/logos/valiant-technologies.svg", // Changed from .png to .svg
-        timeframe: "2014 - Present",
+        timeframe: "2015 - Present",
         role: "Founder & Managing Director",
         achievements: [
           <>
@@ -204,10 +204,28 @@ const about: About = {
         images: [],
       },
       {
+        company: "Ethics Advance Technology Ltd.",
+        logo: "/images/logos/eatl.svg", // Changed from .png to .svg
+        timeframe: "2014 - 2015",
+        role: "Assistant Manager, Business Development",
+        achievements: [
+          <>
+          Coordinating nation-wide campaign in 53 universities and organizing Bootcamp for the EATL-Prothom Alo App Development Contest 2014, and developed proposals raising USD 200k
+          </>,
+          <>
+          Contributing to the success of "National Mobile Application Trainer Program (2014-2015)" for the ICT Division, Ministry of Post Telecommunication & IT
+          </>,
+          <>
+          Contributed to the "Learning & Earning Development Project (2015)" for ICT Division, Ministry of Post, Telecommunication & Technology
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Microsoft Bangladesh",
         logo: "/images/logos/microsoft.svg", // Changed from .png to .svg
         timeframe: "Nov 2013 - June 2014",
-        role: "Intern - Business Evangelist Support (DX)",
+        role: "Intern - Business Evangelist Support (Developer Experience)",
         achievements: [
           <>
           Engaged student developer communities of public and private universities nationwide in app development, testing, and contests.
