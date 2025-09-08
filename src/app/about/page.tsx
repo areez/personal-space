@@ -329,7 +329,10 @@ export default function About() {
                           rel="noopener noreferrer"
                           variant="secondary"
                           size="s"
+                          // Change from:
                           suffixIcon="external"
+                          // To:
+                          suffixIcon="arrowUpRightFromSquare"
                         >
                           Verify Credential
                         </Button>

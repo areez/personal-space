@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 
+// Add this import at the top with other HiOutline imports
 import {
   HiArrowUpRight,
   HiOutlineLink,
@@ -13,9 +14,10 @@ import {
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
   HiOutlineCommandLine,
-  HiOutlineCloud, // Added for cloud services
-  HiOutlineShieldCheck, // Added for security
-  HiOutlineCog6Tooth, // Added for system administration
+  HiOutlineCloud,
+  HiOutlineShieldCheck,
+  HiOutlineCog6Tooth,
+  HiOutlineExternalLink, // Add this line
 } from "react-icons/hi2";
 
 import {
@@ -58,25 +60,24 @@ export const iconLibrary: Record<string, IconType> = {
   x: FaX,
   twitter: FaXTwitter,
   threads: FaThreads,
-  arrowUpRightFromSquare: HiArrowTopRightOnSquare,
-  document: HiOutlineDocument,
-  rocket: HiOutlineRocketLaunch,
-  javascript: SiJavascript,
-  nextjs: SiNextdotjs,
-  supabase: SiSupabase,
-  figma: SiFigma,
-  python: HiOutlineCommandLine,
-  facebook: FaFacebook,
-  pinterest: FaPinterest,
-  whatsapp: FaWhatsapp,
-  reddit: FaReddit,
-  telegram: FaTelegram,
-  // Changed from SiMicrosoftazure to HiOutlineCloud
-  azure: HiOutlineCloud,
-  cloud: HiOutlineCloud,
-  google: SiGoogle,
-  systemAdmin: HiOutlineCog6Tooth,
-  security: HiOutlineShieldCheck,
+  arrowUpRightFromSquare: HiArrowTopRightOnSquare, // Add this line - using existing icon
+  // OR use the dedicated external link icon:
+  // external: HiOutlineExternalLink, // Alternative option
+
+  // Also add missing tag icons:
+  devops: HiOutlineRocketLaunch,
+  cloudNative: HiOutlineGlobeAsiaAustralia,
+  cicd: HiArrowRight,
+  pythonDevelopment: SiPython,
+  dockerKubernetes: PiGridFourDuotone,
+  agileScrum: PiUserCircleDuotone,
+  microsoftAzure: HiOutlineCloud,
+  cloudServices: HiOutlineCloud,
+  cloudComputing: HiOutlineGlobeAsiaAustralia,
+  azurePortal: HiOutlineDocument,
+  itSupport: SiGoogle,
+  networkSecurity: HiOutlineShieldCheck,
+  shellCommands: HiOutlineCommandLine,
 };
 
 export type IconLibrary = typeof iconLibrary;
