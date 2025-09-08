@@ -147,8 +147,8 @@ export default function About() {
               className={styles.textAlign}
               variant="display-default-xs"
               onBackground="neutral-weak"
-              marginTop="m"
-              marginBottom="s"
+              marginTop="l"
+              marginBottom="xs"
             >
               {person.role}
             </Text>
