@@ -206,7 +206,7 @@ const about: About = {
         role: "Intern - Business Evangelist Support (DX)",
         achievements: [
           <>
-          Engaged student communities in app development, testing, and contests.
+          Engaged student developer communities of public and private universities nationwide in app development, testing, and contests.
           </>,
           <>
           Promoted app development and supported student developers through workshops.
