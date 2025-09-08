@@ -204,19 +204,23 @@ const about: About = {
         company: "Microsoft Bangladesh",
         timeframe: "Nov 2013 - June 2014",
         role: "Intern - Business Evangelist Support (DX)",
+        description: (
+          <>
+            Key Responsibilities & Achievements at Microsoft Bangladesh:
+          </>
+        ),
         achievements: [
-          <p>Key Responsibilities & Achievements at Microsoft Bangladesh:</p>,
           <>
-          Engaged student communities in app development, testing, and contests.
+            Engaged student communities in app development, testing, and contests.
           </>,
           <>
-          Promoted app development and supported student developers through workshops.
+            Promoted app development and supported student developers through workshops.
           </>,
           <>
-          Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
+            Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
           </>,
           <>
-          Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
+            Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
           </>,
         ],
         images: [],
