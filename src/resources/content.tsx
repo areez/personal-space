@@ -162,9 +162,9 @@ const about: About = {
         role: "Founder",
         achievements: [
           <>
-           End-to-end farming supply chain solution hosted on Blockchai ensuring quality,
-           safety, and transparency from farm to fork, supported by market intelligence
-           to enhance the value of fresh produce.
+           End-to-end farming supply chain solution hosted on Blockchai ensuring complete
+           traceability, quality, safety, and transparency from farm to fork, supported by
+           market intelligence to enhance the value of fresh produce.
           </>,
         ],
         images: [],
