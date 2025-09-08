@@ -205,7 +205,7 @@ const about: About = {
         timeframe: "Nov 2013 - June 2014",
         role: "Intern - Business Evangelist Support (DX)",
         achievements: [
-          <h3>Key Responsibilities & Achievements at Microsoft Bangladesh:</h3>,
+          <p>Key Responsibilities & Achievements at Microsoft Bangladesh:</p>,
           <>
           Engaged student communities in app development, testing, and contests.
           </>,
