@@ -32,7 +32,7 @@ import {
   SiFigma,
   SiSupabase,
   SiPython,
-  SiMicrosoftazure, // Added for Azure
+  // SiMicrosoftazure removed - no longer available in react-icons
   SiGoogle, // Added for Google
 } from "react-icons/si";
 
@@ -71,8 +71,8 @@ export const iconLibrary: Record<string, IconType> = {
   whatsapp: FaWhatsapp,
   reddit: FaReddit,
   telegram: FaTelegram,
-  // Added missing icons
-  azure: SiMicrosoftazure,
+  // Changed from SiMicrosoftazure to HiOutlineCloud
+  azure: HiOutlineCloud,
   cloud: HiOutlineCloud,
   google: SiGoogle,
   systemAdmin: HiOutlineCog6Tooth,
