@@ -350,18 +350,8 @@ const about: About = {
         images: [],
       },
       {
-        title: "Life Member, BITPN",
-        logo: "/images/logos/jcibd.svg",
-        description: [
-          <>
-          Bangladesh IT Professionals Network (BITPN) is a leading hub of IT professionals in Bangladesh
-          </>,
-        ],
-        images: [],
-      },
-      {
         title: "President (2011-2013), NSUCEC",
-        logo: "/images/logos/jcibd.svg",
+        logo: "/images/logos/nsucec.svg",
         description: [
           <>
           Served a 2-year tenure as the President of the largest student activity club of North South University
