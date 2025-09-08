@@ -305,8 +305,8 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill.title}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
+                  <Column key={`${skill.title}-${index}`} fillWidth className={styles.certificationItem}>
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="s">
                       <Row gap="8" vertical="center" flex={1}>
                         {skill.logo && (
                           <Media
@@ -319,9 +319,22 @@ export default function About() {
                         )}
                         <Text variant="heading-strong-l">{skill.title}</Text>
                       </Row>
-                      {/* Add timeframe/date when available in data structure */}
                     </Row>
-                    <Text variant="body-default-m" marginBottom="m">{skill.description}</Text>
+                    <Text variant="body-default-m" marginBottom="s">{skill.description}</Text>
+                    {skill.credlyLink && (
+                      <Row marginBottom="m">
+                        <Button
+                          href={skill.credlyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="secondary"
+                          size="s"
+                          suffixIcon="external"
+                        >
+                          Verify Credential
+                        </Button>
+                      </Row>
+                    )}
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8">
                         {skill.tags.map((tag, tagIndex) => (

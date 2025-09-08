@@ -183,32 +183,21 @@ export interface About extends BasePageConfig {
   };
   /** Technical skills section */
   technical: {
-    /** Whether to display technical section */
     display: boolean;
-    /** Technical section title */
     title: string;
-    /** Array of technical skills */
     skills: Array<{
-      /** Skill title */
       title: string;
-      /** Skill logo path */
       logo?: string;
-      /** Skill description */
       description?: React.ReactNode;
-      /** Skill tags */
+      credlyLink?: string; // Add this line
       tags?: Array<{
         name: string;
         icon?: string;
       }>;
-      /** Images related to the skill */
       images?: Array<{
-        /** Image source path */
         src: string;
-        /** Image alt text */
         alt: string;
-        /** Image width ratio */
         width: number;
-        /** Image height ratio */
         height: number;
       }>;
     }>;

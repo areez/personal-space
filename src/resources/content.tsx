@@ -165,9 +165,8 @@ const about: About = {
         achievements: [
           <>
            End-to-end farming supply chain solution hosted on Blockchain with complete
-            farm to fork traceability for cosumers, farmers, exporters, traders, regulators,
-            to ensuring quality, safety, and transparency supported by market intelligence to
-            enhance the value of fresh produce.
+            farm to fork traceability for consumers, farmers, exporters, traders, and regulators,
+            supported by market intelligence to enhance the value of fresh produce.
           </>,
         ],
         images: [],
@@ -235,7 +234,7 @@ const about: About = {
         name: "North South University",
         logo: "/images/logos/north-south-university.svg", // Changed from .png to .svg
         description: (
-          <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>
+          <>Bachelor of Business Administration (BBA) degree with a major in Marketing</>
         ),
       },
     ],
@@ -246,7 +245,7 @@ const about: About = {
     skills: [
       {
         title: "IBM DevOps & Software Engineering",
-        logo: "/images/logos/ibm.svg", // Changed from .png to .svg
+        logo: "/images/logos/ibm.svg",
         description: [
           <>
           Mastered 6-months long, 15-courses curriculum on DevOps, Agile/Scrum, CI/CD, TDD/BDD, and
@@ -256,21 +255,23 @@ const about: About = {
           security, monitoring & observability to these applications.
           </>,
         ],
+        credlyLink: "https://www.coursera.org/account/accomplishments/specialization/6FDPMUJNEGB5",
         tags: [
-          { name: "DevOps", icon: "rocket" }, // using rocket instead of workflow
-          { name: "Cloud-Native", icon: "globe" }, // using globe instead of cloud
-          { name: "CI/CD", icon: "arrowRight" }, // using arrowRight instead of repeat
-          { name: "Python Development", icon: "python" }, // using python instead of javascript
-          { name: "Docker & Kubernetes", icon: "grid" }, // using grid instead of box
-          { name: "Agile & Scrum", icon: "person" }, // using person instead of users
+          { name: "DevOps", icon: "rocket" },
+          { name: "Cloud-Native", icon: "globe" },
+          { name: "CI/CD", icon: "arrowRight" },
+          { name: "Python Development", icon: "python" },
+          { name: "Docker & Kubernetes", icon: "grid" },
+          { name: "Agile & Scrum", icon: "person" },
         ],
         images: [],
       },
       {
         title: "Microsoft Certified: Azure Fundamentals",
-        logo: "/images/logos/microsoft-azure.svg", // Add logo for Azure certification
+        logo: "/images/logos/microsoft-azure.svg",
         description: <>Demonstrated foundational level knowledge of cloud services and
         how those services are provided with Microsoft Azure.</>,
+        credlyLink: "https://www.credly.com/earner/earned/badge/05a8ee30-9ee5-4a14-99a9-7e996d25b806",
         tags: [
           { name: "Microsoft Azure", icon: "azure" },
           { name: "Cloud Services", icon: "cloud" },
@@ -281,10 +282,11 @@ const about: About = {
       },
       {
         title: "Google IT Support Professional",
-        logo: "/images/logos/google.svg", // Add logo for Google certification
+        logo: "/images/logos/google.svg",
         description: <>Completed five-course certification, developed by Google, that include
         hands-on, practice-based assessments, being competent in foundational skills, including
         shell commands, networking, system administration, and security.</>,
+        credlyLink: "https://www.coursera.org/account/accomplishments/professional-cert/TE2YORAIR8HR",
         tags: [
           { name: "IT Support", icon: "google" },
           { name: "System Administration", icon: "systemAdmin" },
