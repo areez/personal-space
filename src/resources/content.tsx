@@ -129,7 +129,7 @@ const about: About = {
     experiences: [
       {
         company: "Valiant Technologies / Valiant Tech Ltd.",
-        logo: "/images/logos/valiant-technologies.png",
+        logo: "/images/logos/valiant-technologies.svg", // Changed from .png to .svg
         timeframe: "2014 - Present",
         role: "Founder & Managing Director",
         achievements: [
@@ -159,7 +159,7 @@ const about: About = {
       },
       {
         company: "FarmRoket™",
-        logo: "/images/logos/farmroket.png",
+        logo: "/images/logos/farmroket.svg", // Changed from .png to .svg
         timeframe: "2024 - Present",
         role: "Founder",
         achievements: [
@@ -174,7 +174,7 @@ const about: About = {
       },
       {
         company: "CropRocket Limited",
-        logo: "/images/logos/croprocket.png",
+        logo: "/images/logos/croprocket.svg", // Changed from .png to .svg
         timeframe: "2021 - Present",
         role: "Director",
         achievements: [
@@ -192,7 +192,7 @@ const about: About = {
       },
       {
         company: "Shuktara Travels",
-        logo: "/images/logos/shuktara-travels.png",
+        logo: "/images/logos/shuktara-travels.svg", // Changed from .png to .svg
         timeframe: "2018 - Present",
         role: "Co-founder",
         achievements: [
@@ -206,7 +206,7 @@ const about: About = {
       },
       {
         company: "Microsoft Bangladesh",
-        logo: "/images/logos/microsoft.png",
+        logo: "/images/logos/microsoft.svg", // Changed from .png to .svg
         timeframe: "Nov 2013 - June 2014",
         role: "Intern - Business Evangelist Support (DX)",
         achievements: [
@@ -233,7 +233,7 @@ const about: About = {
     institutions: [
       {
         name: "North South University",
-        logo: "/images/logos/north-south-university.png",
+        logo: "/images/logos/north-south-university.svg", // Changed from .png to .svg
         description: (
           <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>
         ),
@@ -246,7 +246,7 @@ const about: About = {
     skills: [
       {
         title: "IBM DevOps & Software Engineering",
-        logo: "/images/logos/ibm.png",
+        logo: "/images/logos/ibm.svg", // Changed from .png to .svg
         description: [
           <>
           Mastered 6-months long, 15-courses curriculum on DevOps, Agile/Scrum, CI/CD, TDD/BDD, and
@@ -268,6 +268,7 @@ const about: About = {
       },
       {
         title: "Microsoft Certified: Azure Fundamentals",
+        logo: "/images/logos/microsoft-azure.svg", // Add logo for Azure certification
         description: <>Demonstrated foundational level knowledge of cloud services and
         how those services are provided with Microsoft Azure.</>,
         tags: [
@@ -280,6 +281,7 @@ const about: About = {
       },
       {
         title: "Google IT Support Professional",
+        logo: "/images/logos/google.svg", // Add logo for Google certification
         description: <>Completed five-course certification, developed by Google, that include
         hands-on, practice-based assessments, being competent in foundational skills, including
         shell commands, networking, system administration, and security.</>,
