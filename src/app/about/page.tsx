@@ -207,7 +207,7 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="center" marginBottom="4">
-                      <Column width="2/12" horizontal="start">
+                      <Row gap="8" vertical="center" flex={1}>
                         {experience.logo && (
                           <Media
                             src={experience.logo}
@@ -217,17 +217,13 @@ export default function About() {
                             radius="xs"
                           />
                         )}
-                      </Column>
-                      <Column width="7/12" horizontal="start">
                         <Text variant="heading-strong-l">
                           {experience.company}
                         </Text>
-                      </Column>
-                      <Column width="3/12" horizontal="end">
-                        <Text variant="heading-default-xs" onBackground="neutral-weak">
-                          {experience.timeframe}
-                        </Text>
-                      </Column>
+                      </Row>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                        {experience.timeframe}
+                      </Text>
                     </Row>
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
@@ -281,7 +277,7 @@ export default function About() {
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
-                      <Column width="2/12" horizontal="start">
+                      <Row gap="8" vertical="center" flex={1}>
                         {institution.logo && (
                           <Media
                             src={institution.logo}
@@ -291,16 +287,9 @@ export default function About() {
                             radius="xs"
                           />
                         )}
-                      </Column>
-                      <Column width="7/12" horizontal="start">
                         <Text variant="heading-strong-l">{institution.name}</Text>
-                      </Column>
-                      <Column width="3/12" horizontal="end">
-                        {/* Add timeframe if available in your data structure */}
-                        <Text variant="heading-default-xs" onBackground="neutral-weak">
-                          {/* institution.timeframe */}
-                        </Text>
-                      </Column>
+                      </Row>
+                      {/* Add timeframe when available in data structure */}
                     </Row>
                     <Text variant="body-default-m">{institution.description}</Text>
                   </Column>
@@ -318,7 +307,7 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill.title}-${index}`} fillWidth>
                     <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
-                      <Column width="2/12" horizontal="start">
+                      <Row gap="8" vertical="center" flex={1}>
                         {skill.logo && (
                           <Media
                             src={skill.logo}
@@ -328,16 +317,9 @@ export default function About() {
                             radius="xs"
                           />
                         )}
-                      </Column>
-                      <Column width="7/12" horizontal="start">
                         <Text variant="heading-strong-l">{skill.title}</Text>
-                      </Column>
-                      <Column width="3/12" horizontal="end">
-                        {/* Add timeframe/date if available in your data structure */}
-                        <Text variant="heading-default-xs" onBackground="neutral-weak">
-                          {/* skill.timeframe or skill.date */}
-                        </Text>
-                      </Column>
+                      </Row>
+                      {/* Add timeframe/date when available in data structure */}
                     </Row>
                     <Text variant="body-default-m" marginBottom="m">{skill.description}</Text>
                     {skill.tags && skill.tags.length > 0 && (
