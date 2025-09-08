@@ -129,7 +129,7 @@ const about: About = {
     experiences: [
       {
         company: "Valiant Technologies | Valiant Tech Ltd.",
-        timeframe: "2012 - Present",
+        timeframe: "2014 - Present",
         role: "Founder & Managing Director",
         achievements: [
           <>
@@ -157,7 +157,7 @@ const about: About = {
         ],
       },
       {
-        company: "FarkRoket",
+        company: "FarmRoket™",
         timeframe: "2024 - Present",
         role: "Founder",
         achievements: [
@@ -195,6 +195,25 @@ const about: About = {
             Online travel agency offering efficient outbound travel solutions
             for B2B & B2C utilizing aggregated flight APIs and offering
             reservation services for travel agents, SMEs, and corporates.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Microsoft Bangladesh",
+        timeframe: "Nov 2014 - May 2015",
+        role: "Intern - Business Evangelist Support (DX)",
+        achievements: [
+          <>
+            Key Responsibilities & Achievements at Microsoft Bangladesh:
+            <br />
+            Engaged student communities in app development, testing, and contests.
+            <br />
+            Promoted app development and supported student developers through workshops.
+            <br />
+            Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
+            <br />
+            Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
           </>,
         ],
         images: [],
