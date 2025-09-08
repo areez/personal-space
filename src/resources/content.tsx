@@ -229,7 +229,7 @@ const about: About = {
       {
         name: "North South University",
         description: (
-          <>Graduated with a Bachelor of Business Administration (BBA), majoring in Marketing.</>
+          <>Graduated with a Bachelor of Business Administration (BBA) degree majoring in Marketing.</>
         ),
       },
     ],
@@ -242,13 +242,11 @@ const about: About = {
         title: "IBM DevOps & Software Engineering",
         description: [
           <>
-            Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native Development
-          </>,
-          <>
-            Built & deployed Python microservices using Docker, Kubernetes, OpenShift, Serverless
-          </>,
-          <>
-          Applied Git/GitHub, Linux scripting, automation, security, monitoring & observability
+          Mastered DevOps, Agile/Scrum, CI/CD, TDD/BDD, and Cloud-Native Development, building &
+          deploying Python microservices using Docker, Kubernetes, OpenShift, Serverless, developing
+          foundational applications utilizing IBM Watson AI libraries & ML capabilities and have
+          applied Git/GitHub, Linux scripting, automation, security, monitoring & observability
+          to these applications.
           </>,
         ],
         tags: [
