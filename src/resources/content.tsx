@@ -125,7 +125,7 @@ const about: About = {
   },
   work: {
     display: true,
-    title: "Work Experience",
+    title: "Work",
     experiences: [
       {
         company: "Valiant Technologies / Valiant Tech Ltd.",
