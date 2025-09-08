@@ -255,7 +255,7 @@ const about: About = {
           { name: "DevOps", icon: "rocket" }, // using rocket instead of workflow
           { name: "Cloud-Native", icon: "globe" }, // using globe instead of cloud
           { name: "CI/CD", icon: "arrowRight" }, // using arrowRight instead of repeat
-          { name: "Python Development", icon: "javascript" }, // using javascript instead of code
+          { name: "Python Development", icon: "python" }, // using python instead of javascript
           { name: "Docker & Kubernetes", icon: "grid" }, // using grid instead of box
           { name: "Agile & Scrum", icon: "person" }, // using person instead of users
         ],
