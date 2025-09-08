@@ -188,18 +188,22 @@ export interface About extends BasePageConfig {
     skills: Array<{
       title: string;
       logo?: string;
-      description?: React.ReactNode;
-      credlyLink?: string; // Add this line
-      tags?: Array<{
-        name: string;
-        icon?: string;
-      }>;
-      images?: Array<{
-        src: string;
-        alt: string;
-        width: number;
-        height: number;
-      }>;
+      description: React.ReactNode | React.ReactNode[];
+      credlyLink?: string;
+      tags?: Array<{ name: string; icon: string }>;
+      images: Array<{ src: string; alt: string; width: number; height: number }>;
+    }>;
+  };
+  leadership: {
+    display: boolean;
+    title: string;
+    skills: Array<{
+      title: string;
+      logo?: string;
+      description: React.ReactNode | React.ReactNode[];
+      credlyLink?: string;
+      tags?: Array<{ name: string; icon: string }>;
+      images: Array<{ src: string; alt: string; width: number; height: number }>;
     }>;
   };
 }

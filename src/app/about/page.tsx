@@ -351,6 +351,57 @@ export default function About() {
               </Column>
             </>
           )}
+        {about.leadership.display && (
+          <>
+            <Heading as="h2" id={about.leadership.title} variant="display-strong-s" marginBottom="m">
+              {about.leadership.title}
+            </Heading>
+            <Column fillWidth gap="l" marginBottom="40">
+              {about.leadership.skills.map((skill, index) => (
+                <Column key={`${skill.title}-${index}`} fillWidth className={styles.certificationItem}>
+                  <Row fillWidth horizontal="between" vertical="center" marginBottom="s">
+                    <Row gap="8" vertical="center" flex={1}>
+                      {skill.logo && (
+                        <Media
+                          src={skill.logo}
+                          alt={`${skill.title} logo`}
+                          width={2}
+                          height={2}
+                          radius="xs"
+                        />
+                      )}
+                      <Text variant="heading-strong-l">{skill.title}</Text>
+                    </Row>
+                  </Row>
+                  <Text variant="body-default-m" marginBottom="s">{skill.description}</Text>
+                  {skill.credlyLink && (
+                    <Row marginBottom="m">
+                      <Button
+                        href={skill.credlyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="secondary"
+                        size="s"
+                        suffixIcon="arrowUpRightFromSquare"
+                      >
+                        Verify Credential
+                      </Button>
+                    </Row>
+                  )}
+                  {skill.tags && skill.tags.length > 0 && (
+                    <Row wrap gap="8">
+                      {skill.tags.map((tag, tagIndex) => (
+                        <Tag key={tagIndex} size="s" prefixIcon={tag.icon}>
+                          {tag.name}
+                        </Tag>
+                      ))}
+                    </Row>
+                  )}
+                </Column>
+              ))}
+            </Column>
+          </>
+        )}
         </Column>
       </Row>
     </Column>

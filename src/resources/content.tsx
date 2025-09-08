@@ -315,7 +315,7 @@ const about: About = {
       },
     ],
   },
-  technical: {
+  leadership: {
     display: true,
     title: "Leaderships",
     skills: [
