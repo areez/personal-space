@@ -147,6 +147,8 @@ export default function About() {
               className={styles.textAlign}
               variant="display-default-xs"
               onBackground="neutral-weak"
+              marginTop="m"
+              marginBottom="s"
             >
               {person.role}
             </Text>
@@ -312,8 +314,8 @@ export default function About() {
                           <Media
                             src={skill.logo}
                             alt={`${skill.title} logo`}
-                            width={3}
-                            height={3}
+                            width={2}
+                            height={2}
                             radius="xs"
                           />
                         )}
@@ -327,7 +329,7 @@ export default function About() {
                           href={skill.credlyLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          variant="secondary"
+                          variant="brand"
                           size="s"
                           suffixIcon="arrowUpRightFromSquare"
                         >
@@ -338,7 +340,7 @@ export default function About() {
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8">
                         {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={tagIndex} size="s">
+                          <Tag key={tagIndex} size="s" prefixIcon={tag.icon}>
                             {tag.name}
                           </Tag>
                         ))}
