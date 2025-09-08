@@ -329,7 +329,7 @@ export default function About() {
                           href={skill.credlyLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          variant="brand"
+                          variant="primary"
                           size="s"
                           suffixIcon="arrowUpRightFromSquare"
                         >
