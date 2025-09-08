@@ -128,14 +128,14 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Valiant Technologies | Valiant Tech Ltd.",
+        company: "Valiant Technologies / Valiant Tech Ltd.",
         timeframe: "2014 - Present",
         role: "Founder & Managing Director",
         achievements: [
           <>
-            Founded Valiant Technologies in 2012, a software engineering and IT
-            services firm delivering scalable, cloud-first solutions to solve business
-            challenges.
+            Founded Valiant Technologies in 2012 in an idea contest, has now become a
+            software engineering and IT services firm delivering scalable, cloud-first
+            solutions to solve business challenges serving 200+ global clients.
           </>,
           <>
             Expertise in EPC contracting, engineering services, system integration, and
