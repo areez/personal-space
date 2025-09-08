@@ -12,7 +12,7 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
-  HiOutlineCodeBracket, // Add this line for Python
+  HiOutlineCommandLine, // For a coding/terminal representation
 } from "react-icons/hi2";
 
 import {
@@ -60,7 +60,7 @@ export const iconLibrary: Record<string, IconType> = {
   nextjs: SiNextdotjs,
   supabase: SiSupabase,
   figma: SiFigma,
-  python: HiOutlineCodeBracket, // Use outline code bracket for Python
+  python: HiOutlineCommandLine, // Terminal/coding representation
   facebook: FaFacebook,
   pinterest: FaPinterest,
   whatsapp: FaWhatsapp,
