@@ -273,8 +273,21 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next-gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Microsoft Certified: Azure Fundamentals",
+        description: <>Demonstrated foundational level knowledge of cloud services and
+        how those services are provided with Microsoft Azure.</>,
+        tags: [
+          { name: "JavaScript", icon: "javascript" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Supabase", icon: "supabase" },
+        ],
+        images: [],
+      },
+      {
+        title: "Google IT Support Professional",
+        description: <>Completed five-course certification, developed by Google, that include
+        hands-on, practice-based assessments, being competent in foundational skills, including
+        shell commands, networking, system administration, and security.</>,
         tags: [
           { name: "JavaScript", icon: "javascript" },
           { name: "Next.js", icon: "nextjs" },
