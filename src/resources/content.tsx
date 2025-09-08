@@ -162,9 +162,10 @@ const about: About = {
         role: "Founder",
         achievements: [
           <>
-           End-to-end farming supply chain solution hosted on Blockchai ensuring complete
-           traceability, quality, safety, and transparency from farm to fork, supported by
-           market intelligence to enhance the value of fresh produce.
+           End-to-end farming supply chain solution hosted on Blockchain with complete
+            farm to fork traceability for cosumers, farmers, exporters, traders, regulators,
+            to ensuring quality, safety, and transparency supported by market intelligence to
+            enhance the value of fresh produce.
           </>,
         ],
         images: [],
@@ -201,19 +202,21 @@ const about: About = {
       },
       {
         company: "Microsoft Bangladesh",
-        timeframe: "Nov 2014 - May 2015",
+        timeframe: "Nov 2013 - June 2014",
         role: "Intern - Business Evangelist Support (DX)",
         achievements: [
+          <h3>Key Responsibilities & Achievements at Microsoft Bangladesh:</h3>,
           <>
-            Key Responsibilities & Achievements at Microsoft Bangladesh:
-            <br />
-            Engaged student communities in app development, testing, and contests.
-            <br />
-            Promoted app development and supported student developers through workshops.
-            <br />
-            Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
-            <br />
-            Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
+          Engaged student communities in app development, testing, and contests.
+          </>,
+          <>
+          Promoted app development and supported student developers through workshops.
+          </>,
+          <>
+          Managed Microsoft DreamSpark partnership with universities, providing free Microsoft products to engineering students.
+          </>,
+          <>
+          Led and organized Microsoft Imagine Cup Bangladesh 2014, driving participation and success. Met sponsorship target of USD 125k from different partners.
           </>,
         ],
         images: [],
