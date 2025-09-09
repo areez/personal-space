@@ -26,14 +26,7 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import {
-  SiJavascript,
-  SiNextdotjs,
-  SiFigma,
-  SiSupabase,
-  SiPython,
-  SiGoogle,
-} from "react-icons/si";
+import { SiJavascript, SiNextdotjs, SiFigma, SiSupabase, SiPython, SiGoogle } from "react-icons/si";
 
 import {
   FaDiscord,
@@ -46,7 +39,7 @@ import {
   FaPinterest,
   FaWhatsapp,
   FaReddit,
-  FaTelegram
+  FaTelegram,
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
