@@ -103,7 +103,8 @@ export default function Home() {
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
-      {routes["/blog"] && (
+      // Comment out or remove lines 103-119
+      {/* {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
             <Line maxWidth={48} />
@@ -122,7 +123,7 @@ export default function Home() {
             <Line maxWidth={48} />
           </Row>
         </Column>
-      )}
+      )} */}
       <Projects range={[2]} />
       <Mailchimp />
     </Column>
