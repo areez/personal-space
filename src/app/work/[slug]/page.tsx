@@ -14,6 +14,7 @@ import {
   Row,
   Avatar,
   Line,
+  Tag, // Add Tag import
 } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
@@ -100,6 +101,17 @@ export default async function Project({
           {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
         </Text>
         <Heading variant="display-strong-m">{post.metadata.title}</Heading>
+
+        {/* Add tags display here */}
+        {post.metadata.tags && post.metadata.tags.length > 0 && (
+          <Row wrap gap="8" marginTop="16">
+            {post.metadata.tags.map((tag, index) => (
+              <Tag key={index} size="s">
+                {tag}
+              </Tag>
+            ))}
+          </Row>
+        )}
       </Column>
       <Row marginBottom="32" horizontal="center">
         <Row gap="16" vertical="center">
