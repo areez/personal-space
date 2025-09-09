@@ -97,13 +97,21 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Areez Afsar Khan is an entrepreneur, independent technology consultant, and brand strategist from Dhaka, Bangladesh. He is an IBM-certified Software Engineer with a Bachelor's degree in Business Administration from North South University.
+        Areez Afsar Khan is an entrepreneur, independent technology consultant, and brand
+        strategist from Dhaka, Bangladesh. He is an IBM-certified Software Engineer with a
+        Bachelor's degree in Business Administration from North South University.
         <br />
         <br />
-        With over fifteen years of professional experience, Areez has worked with leading local companies to develop innovative business models and startups in Agrotech, Legaltech, and TravelTech. His expertise spans SaaS, customer experience design, brand and product development, and campaign activations for both his own ventures and clients.
+        With over fifteen years of professional experience, Areez has worked with leading local
+        companies to develop innovative business models and startups in Agrotech, Legaltech,
+        and TravelTech. His expertise spans SaaS, customer experience design, brand and product
+        development, and campaign activations for both his own ventures and clients.
         <br />
         <br />
-        In addition to his entrepreneurial journey, Areez has held notable leadership positions. He served as the 2023 National Vice President of JCI Bangladesh, co-chaired the Standing Committee on Software Products at BASIS (the national trade body for software and IT services), and is a founding member of the Bangladesh IT Pros Network (BITPN).
+        In addition to his entrepreneurial journey, Areez has held notable leadership
+        positions. He served as the 2023 National Vice President of JCI Bangladesh, co-chaired
+        the Standing Committee on Software Products at BASIS (the national trade body for software
+        and IT services), and is a founding member of the Bangladesh IT Pros Network (BITPN).
         <br />
         <br />
 
@@ -121,13 +129,18 @@ const about: About = {
         role: "Founder & Managing Director",
         achievements: [
           <>
-          Founded Valiant Technologies in 2012 through an idea contest, which has now grown into a software engineering and IT services firm delivering scalable, cloud-first solutions to address business challenges for 200+ global clients.
+          Founded Valiant Technologies in 2012 through an idea contest, which has now grown
+          into a software engineering and IT services firm delivering scalable, cloud-first
+          solutions to address business challenges for 200+ global clients.
           </>,
           <>
-          Expertise in EPC contracting, engineering services, system integration, and digital transformation.
+          Expertise in EPC contracting, engineering services, system integration,
+          and digital transformation.
           </>,
           <>
-          Oversees cloud strategies, solution architectures, DevOps practices, and technical presales for home-grown software products as well as partner solutions from Microsoft, AWS, Google, Hoteza, and Odoo.
+          Oversees cloud strategies, solution architectures, DevOps practices, and technical
+          presales for home-grown software products as well as partner solutions from
+          Microsoft, AWS, Google, Hoteza, and Odoo.
           </>,
         ],
         images: [
@@ -146,10 +159,13 @@ const about: About = {
         role: "Founder",
         achievements: [
           <>
-          Developing an end-to-end farming supply chain solution hosted on blockchain, providing complete farm-to-fork traceability for consumers, farmers, exporters, traders, and regulators.
+          An end-to-end farming supply chain solution hosted on blockchain, providing
+          complete farm-to-fork traceability for consumers, farmers, exporters,
+          traders, and regulators.
           </>,
           <>
-          Platform is supported by market intelligence to enhance the value of fresh produce and ensure transparency.
+          Platform is supported by market intelligence to enhance the value of
+          fresh produce and ensure transparency.
           </>
         ],
         images: [],
@@ -161,10 +177,12 @@ const about: About = {
         role: "Director",
         achievements: [
           <>
-          Driving initiatives to improve crop seed markets in Bangladesh using state-of-the-art seed testing labs, research facilities, nurseries, and cultivation farms.
+          Driving initiatives to improve crop seed markets in Bangladesh using state-of-the-art seed
+          testing labs, research facilities, nurseries, and cultivation farms.
           </>,
           <>
-          Helping farmers prepare for cultivation by offering expert pre-cultivation services and building a sustainable agriculture ecosystem.
+          Helping farmers prepare for cultivation by offering expert pre-cultivation services and
+          building a sustainable agriculture ecosystem.
           </>,
         ],
         images: [],
@@ -176,10 +194,12 @@ const about: About = {
         role: "Co-founder",
         achievements: [
           <>
-          Co-founded a leading online travel agency providing efficient outbound travel solutions for B2B & B2C clients.
+          Co-founded a leading online travel agency providing efficient outbound
+          travel solutions for B2B & B2C clients.
           </>,
           <>
-          Utilizes aggregated flight APIs and offers reservation services for travel agents, SMEs, and corporate clients.
+          Utilizes aggregated flight APIs and offers reservation services for
+          travel agents, SMEs, and corporate clients.
           </>
         ],
         images: [],
@@ -191,13 +211,17 @@ const about: About = {
         role: "Assistant Manager, Business Development",
         achievements: [
           <>
-          Coordinated a nationwide campaign across 53 universities and organized the Bootcamp for the EATL–Prothom Alo App Development Contest 2014, raising USD 200k through proposals.
+          Coordinated a nationwide campaign across 53 universities and organized the Bootcamp
+          for the EATL–Prothom Alo App Development Contest 2014, raising USD 200k through proposals.
           </>,
           <>
-          Contributed to the success of the "National Mobile Application Trainer Program (2014–2015)" for the ICT Division, Ministry of Post, Telecommunication & IT.
+          Contributed to the success of the "National Mobile Application Trainer
+          Program (2014–2015)" for the ICT Division, Ministry of Post, Telecommunication & IT.
           </>,
           <>
-          Played a key role in the "Learning & Earning Development Project (2015)" under the ICT Division, Ministry of Post, Telecommunication & Technology.          </>,
+          Contributed to the success of "Learning & Earning Development Project (2015)" under
+          the ICT Division, Ministry of Post, Telecommunication & Technology.
+          </>,
         ],
         images: [],
       },
@@ -208,16 +232,21 @@ const about: About = {
         role: "Intern - Business Evangelist Support (Developer Experience)",
         achievements: [
           <>
-          Engaged student developer communities across universities in idea generation, development, testing, and hackathons.
+          Engaged student developer communities across universities in mobile app idea
+          generation, development, testing, and hackathons.
           </>,
           <>
-          Promoted early mobile app development initiatives during the smartphone boom, mentoring students and leading hackathons—one of which resulted in 100 apps published in a single day.
+          Promoted early mobile app development initiatives during the smartphone
+          boom, mentoring communities and leading hackathons—one of which resulted in
+          100 apps published in a single day.
           </>,
           <>
-          Managed the Microsoft DreamSpark partnership with universities, providing students with free Microsoft products.
+          Managed the Microsoft DreamSpark partnership with universities, providing
+          students with free Microsoft products.
           </>,
           <>
-          Led and organized the Microsoft Imagine Cup Bangladesh 2014, meeting the sponsorship target of USD 125k.
+          Led and organized the Microsoft Imagine Cup Bangladesh 2014 - regional event,
+          meeting the sponsorship target of USD 125k.
           </>,
         ],
         images: [],
@@ -266,7 +295,10 @@ const about: About = {
       {
         title: "Microsoft Certified: Azure Fundamentals",
         logo: "/images/logos/microsoft-azure.svg",
-        description: <>Demonstrated foundational knowledge of cloud services and their delivery through Microsoft Azure.</>,
+        description:
+        <>Demonstrated foundational knowledge of cloud services and their
+        delivery through Microsoft Azure.
+        </>,
         credlyLink: "https://www.credly.com/earner/earned/badge/05a8ee30-9ee5-4a14-99a9-7e996d25b806",
         tags: [
           { name: "Microsoft Azure", icon: "azure" },
@@ -303,7 +335,8 @@ const about: About = {
         description: [
           <>
           Appointed to the Standing Committee for Software Products & SaaS at BASIS, the national
-          trade body for Bangladesh’s software and IT-enabled services sector, representing 2,600+ member organizations.
+          trade body for Bangladesh’s software and IT-enabled services sector, representing
+          2,600+ member organizations.
           </>,
         ],
         images: [],
@@ -313,7 +346,8 @@ const about: About = {
         logo: "/images/logos/nsuaa.svg",
         description: [
           <>
-          Actively patronizing my alma mater - North South University Alumni Association as the appointed Joint Member Secretary (2025).
+          Actively patronizing my alma mater - North South University Alumni Association as the
+          appointed Joint Member Secretary (2025).
           </>,
         ],
         images: [],
@@ -334,7 +368,10 @@ const about: About = {
         logo: "/images/logos/nsucec.svg",
         description: [
           <>
-          Served a two-year tenure as President of NSUCEC, the largest student activity club at North South University.
+          Served two years as President of NSUCEC, the only student activity club at North South
+          University related to technology. Helped the department organized ACM-ICPC Programming
+          Contests, led Robi-ICT Innovation Quest 2012, launched the flagship NSU Cybernauts
+          event, and built strong relationships with IT industry stakeholders and academia.
           </>,
         ],
         images: [],
