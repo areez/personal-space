@@ -123,7 +123,8 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
-                marginBottom="m"
+                marginTop="l"
+                marginBottom="l"
                 vertical="center"
                 className={styles.blockAlign}
                 style={{
