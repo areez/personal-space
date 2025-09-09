@@ -112,7 +112,7 @@ const about: About = {
         In addition to his entrepreneurial journey, Areez has held notable leadership positions. He
         served as the 2023 National Vice President of JCI Bangladesh, co-chaired the Standing
         Committee on Software Products at BASIS (the national trade body for software and IT
-        services), and is a founding member of the Bangladesh IT Pros Network (BITPN).
+        services), and is a founding member of the Bangladesh IT Professionals Network (BITPN).
         <br />
         <br />
       </>
