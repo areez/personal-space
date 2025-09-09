@@ -102,14 +102,12 @@ export default async function Project({
         </Text>
         <Heading variant="display-strong-m">{post.metadata.title}</Heading>
 
-        {/* Add tags display here */}
-        {post.metadata.tags && post.metadata.tags.length > 0 && (
+        {/* Add tag display here */}
+        {post.metadata.tag && (
           <Row wrap gap="8" marginTop="16">
-            {post.metadata.tags.map((tag, index) => (
-              <Tag key={index} size="s">
-                {tag}
-              </Tag>
-            ))}
+            <Tag size="s">
+              {post.metadata.tag}
+            </Tag>
           </Row>
         )}
       </Column>
