@@ -397,7 +397,7 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
+  label: "Projects", // Changed from "Work" to "Projects"
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
 };
