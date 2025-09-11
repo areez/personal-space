@@ -22,6 +22,23 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  // Performance optimizations
+  experimental: {
+    optimizePackageImports: ['@once-ui-system/core', 'react-icons'],
+    webVitalsAttribution: ['CLS', 'LCP'],
+  },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  poweredByHeader: false,
 };
 
 export default withMDX(nextConfig);

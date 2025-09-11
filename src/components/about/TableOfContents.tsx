@@ -63,10 +63,10 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
             </Flex>
             {about.tableOfContent.subItems && (
               <>
-                {section.items.map((item, itemIndex) => (
+                {section.items.map((item) => (
                   <Flex
                     l={{ hide: true }}
-                    key={itemIndex}
+                    key={item}
                     style={{ cursor: "pointer" }}
                     className={styles.hover}
                     gap="12"

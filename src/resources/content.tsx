@@ -2,39 +2,37 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Areez Afsar",
+  lastName: "Khan",
+  name: "Areez Afsar Khan",
+  role: "Entrepreneur & Tech Consultant",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "hello@areezafsar.com",
+  location: "Asia/Dhaka", // IANA time zone identifier
+  languages: ["English", "Bengali"],
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Subscribe to {person.firstName}&apos;s Blogs</>,
+  description: <>My monthly blog updates about technology, business, leadership and philosophy.</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-  },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/areezafsar/",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/areez",
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.net/@areez_afsar", // updated URL format
   },
   {
     name: "Email",
@@ -47,32 +45,34 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${person.name}'s Personal Space`,
+  description: `Portfolio website showcasing my thoughts and ideas as a ${person.role}`,
+  headline: <>Benchmarking with the best globally, to build better locally</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Areez&apos;s</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured Thought
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/case/benchmark-talent-build-global",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
+      I&apos;m Areez, founder of{" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      , where I lead a team of product engineers and following a cloud-first approach to build
+      scalable, secure, and user-centric solutions. Outside of work, I love experimenting with new
+      ideas, writing about tech, engaging with the community, and exploring ways to solve real-world
+      business problems.
     </>
   ),
 };
@@ -91,59 +91,154 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://outlook.office.com/bookwithme/user/48cc795072e74f5c997fec66dfc15db8@valiant.com.bd?anonymous&ismsaljsauthenabled&ep=plink",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Areez Afsar Khan is an entrepreneur, independent technology consultant, and brand strategist
+        from Dhaka, Bangladesh. He is an IBM-certified Software Engineer with a Bachelor&apos;s degree in
+        Business Administration from North South University.
+        <br />
+        <br />
+        With over fifteen years of professional experience, Areez has worked with leading local
+        companies to develop innovative business models and startups in Agrotech, Legaltech, and
+        TravelTech. His expertise spans SaaS, customer experience design, brand and product
+        development, and campaign activations for both his own ventures and clients.
+        <br />
+        <br />
+        In addition to his entrepreneurial journey, Areez has held notable leadership positions. He
+        served as the 2023 National Vice President of JCI Bangladesh, co-chaired the Standing
+        Committee on Software Products at BASIS (the national trade body for software and IT
+        services), and is a founding member of the Bangladesh IT Professionals Network (BITPN).
+        <br />
+        <br />
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Work",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Valiant Technologies / Valiant Tech Ltd.",
+        logo: "/images/logos/valiant-technologies.svg", // Changed from .png to .svg
+        timeframe: "2015 - Present",
+        role: "Founder & Managing Director",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Founded Valiant Technologies in 2012 through an idea contest, which has now grown into a
+            software engineering and IT services firm delivering scalable, cloud-first solutions to
+            address business challenges for 200+ global clients.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Expertise in EPC contracting, engineering services, system integration, and digital
+            transformation.
+          </>,
+          <>
+            Oversees cloud strategies, solution architectures, DevOps practices, and technical
+            presales for home-grown software products as well as partner solutions from Microsoft,
+            AWS, Google, Hoteza, and Odoo.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "FarmRoket™",
+        logo: "/images/logos/farmroket.svg", // Changed from .png to .svg
+        timeframe: "2024 - Present",
+        role: "Founder",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            An end-to-end farming supply chain solution hosted on blockchain, providing complete
+            farm-to-fork traceability for consumers, farmers, exporters, traders, and regulators.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Platform is supported by market intelligence to enhance the value of fresh produce and
+            ensure transparency.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Starfare",
+        logo: "/images/logos/shuktara-travels.svg", // Changed from .png to .svg
+        timeframe: "2018 - Present",
+        role: "Co-founder",
+        achievements: [
+          <>
+            Co-founded a leading online travel agency providing efficient outbound travel solutions
+            for B2B & B2C clients.
+          </>,
+          <>
+            Utilizes aggregated flight APIs and offers reservation services for travel agents, SMEs,
+            and corporate clients.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "CropRocket Limited",
+        logo: "/images/logos/croprocket.svg", // Changed from .png to .svg
+        timeframe: "2021 - Present",
+        role: "Director",
+        achievements: [
+          <>
+            Driving initiatives to improve crop seed markets in Bangladesh using state-of-the-art
+            seed testing labs, research facilities, nurseries, and cultivation farms.
+          </>,
+          <>
+            Helping farmers prepare for cultivation by offering expert pre-cultivation services and
+            building a sustainable agriculture ecosystem.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Ethics Advance Technology Ltd.",
+        logo: "/images/logos/eatl.svg", // Changed from .png to .svg
+        timeframe: "2014 - 2015",
+        role: "Assistant Manager, Business Development",
+        achievements: [
+          <>
+            Coordinated a nationwide campaign across 53 universities and organized the Bootcamp for
+            the EATL&ndash;Prothom Alo App Development Contest 2014, raising USD 200k through proposals.
+          </>,
+          <>
+            Contributed to the success of the &quot;National Mobile Application Trainer Program
+            (2014&ndash;2015)&quot; for the ICT Division, Ministry of Post, Telecommunication & IT.
+          </>,
+          <>
+            Contributed to the success of &quot;Learning & Earning Development Project (2015)&quot; under the
+            ICT Division, Ministry of Post, Telecommunication & Technology.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Microsoft Bangladesh",
+        logo: "/images/logos/microsoft.svg", // Changed from .png to .svg
+        timeframe: "Nov 2013 - June 2014",
+        role: "Intern - Business Evangelist Support (Developer Experience)",
+        achievements: [
+          <>
+            Engaged student developer communities across universities in mobile app idea generation,
+            development, testing, and hackathons.
+          </>,
+          <>
+            Promoted early mobile app development initiatives during the smartphone boom, mentoring
+            communities and leading hackathons—one of which resulted in 100 apps published in a
+            single day.
+          </>,
+          <>
+            Managed the Microsoft DreamSpark partnership with universities, providing students with
+            free Microsoft products.
+          </>,
+          <>
+            Led and organized the Microsoft Imagine Cup Bangladesh 2014 - regional event, meeting
+            the sponsorship target of USD 125k.
           </>,
         ],
         images: [],
@@ -151,79 +246,137 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "North South University",
+        logo: "/images/logos/north-south-university.svg", // Changed from .png to .svg
+        description: (
+          <>Earned a Bachelor of Business Administration (BBA) degree, majoring in Marketing.</>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Certification",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        title: "IBM DevOps & Software Engineering",
+        logo: "/images/logos/ibm.svg",
+        description: [
+          <>
+            Completed a 6-month, 15-course IBM certification on DevOps, Agile/Scrum, CI/CD, and
+            Cloud-Native Development, building and deploying Python microservices with Docker,
+            Kubernetes, OpenShift, and Serverless, while applying Git/GitHub, Linux scripting,
+            automation, security, monitoring, and observability practices.
+          </>,
+        ],
+        credlyLink: "https://www.coursera.org/account/accomplishments/specialization/6FDPMUJNEGB5",
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "DevOps", icon: "rocket" },
+          { name: "Cloud-Native", icon: "globe" },
+          { name: "CI/CD", icon: "arrowRight" },
+          { name: "Python Development", icon: "python" },
+          { name: "Docker & Kubernetes", icon: "grid" },
+          { name: "Agile & Scrum", icon: "person" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Microsoft Certified: Azure Fundamentals",
+        logo: "/images/logos/microsoft-azure.svg",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Demonstrated foundational knowledge of cloud services and their delivery through
+            Microsoft Azure.
+          </>
         ),
+        credlyLink:
+          "https://www.credly.com/earner/earned/badge/05a8ee30-9ee5-4a14-99a9-7e996d25b806",
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Microsoft Azure", icon: "azure" },
+          { name: "Cloud Services", icon: "cloud" },
+          { name: "Cloud Computing", icon: "globe" },
+          { name: "Azure Portal", icon: "document" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "Google IT Support Professional",
+        logo: "/images/logos/google.svg",
+        description: (
+          <>
+            Completed a five-course certification program developed by Google, including hands-on
+            assessments. Gained proficiency in shell commands, networking, system administration,
+            and security.
+          </>
+        ),
+        credlyLink:
+          "https://www.coursera.org/account/accomplishments/professional-cert/TE2YORAIR8HR",
+        tags: [
+          { name: "IT Support", icon: "google" },
+          { name: "System Administration", icon: "systemAdmin" },
+          { name: "Network Security", icon: "security" },
+          { name: "Shell Commands", icon: "python" },
         ],
-      },  
+        images: [],
+      },
+    ],
+  },
+  leadership: {
+    display: true,
+    title: "Leadership",
+    skills: [
+      {
+        title: "Co-chariman, Software Products & SaaS, BASIS",
+        logo: "/images/logos/basis.svg",
+        description: [
+          <>
+            Appointed to the Standing Committee for Software Products & SaaS at BASIS, the national
+            trade body for Bangladesh’s software and IT-enabled services sector, representing 2,600+
+            member organizations.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "Joint Member Secretary, NSUAA",
+        logo: "/images/logos/nsuaa.svg",
+        description: [
+          <>
+            Actively patronizing my alma mater - North South University Alumni Association as the
+            appointed Joint Member Secretary (2025).
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "2023 National Vice President, JCI Bangladesh",
+        logo: "/images/logos/jcibd.svg",
+        description: [
+          <>
+            Served in the national governing body of JCI Bangladesh, a global leadership
+            organization for young professionals. Contributed to leadership development programs and
+            served as a JCI Trainer.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        title: "President (2011-2013), NSUCEC",
+        logo: "/images/logos/nsucec.svg",
+        description: [
+          <>
+            Served two years as President of NSUCEC, the only student activity club at North South
+            University related to technology. Helped the department organized ACM-ICPC Programming
+            Contests, led Robi-ICT Innovation Quest 2012, launched the flagship NSU Cybernauts
+            event, and built strong relationships with IT industry stakeholders and academia.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
 };
@@ -231,19 +384,15 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Insights on technology, business, leadership and philosophy",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
-  path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  path: "/case", // Changed from "/projects" to "/case"
+  label: "Case Study",
+  title: `Case Studies – ${person.name}`,
+  description: `Design and dev case studies by ${person.name}`,
 };
 
 const gallery: Gallery = {
@@ -251,49 +400,15 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
   ],
 };
 

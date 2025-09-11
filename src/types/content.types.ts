@@ -106,45 +106,47 @@ export interface Home extends BasePageConfig {
  * @description Configuration for the About page, including sections for table of contents, avatar, calendar, introduction, work experience, studies, and technical skills.
  */
 export interface About extends BasePageConfig {
-  /** Table of contents configuration */
+  /** Table of content configuration */
   tableOfContent: {
-    /** Whether to display the table of contents */
+    /** Whether to display table of contents */
     display: boolean;
-    /** Whether to show sub-items in the table of contents */
+    /** Whether to show sub-items in table of contents */
     subItems: boolean;
   };
-  /** Avatar section configuration */
+  /** Avatar configuration */
   avatar: {
-    /** Whether to display the avatar */
+    /** Whether to display avatar */
     display: boolean;
   };
-  /** Calendar section configuration */
+  /** Calendar configuration */
   calendar: {
-    /** Whether to display the calendar */
+    /** Whether to display calendar */
     display: boolean;
-    /** Link to the calendar */
+    /** Calendar booking link */
     link: string;
   };
   /** Introduction section */
   intro: {
-    /** Whether to display the introduction */
+    /** Whether to display intro section */
     display: boolean;
-    /** Title of the introduction section */
+    /** Intro section title */
     title: string;
-    /** Description of the introduction section */
+    /** Intro section description */
     description: React.ReactNode;
   };
   /** Work experience section */
   work: {
-    /** Whether to display work experience */
+    /** Whether to display work section */
     display: boolean;
-    /** Title for the work experience section */
+    /** Work section title */
     title: string;
-    /** List of work experiences */
+    /** Array of work experiences */
     experiences: Array<{
       /** Company name */
       company: string;
-      /** Timeframe of employment */
+      /** Company logo path */
+      logo?: string;
+      /** Employment timeframe */
       timeframe: string;
       /** Role or job title */
       role: string;
@@ -163,48 +165,45 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
-  /** Studies/education section */
+  /** Education/Studies section */
   studies: {
     /** Whether to display studies section */
     display: boolean;
-    /** Title for the studies section */
+    /** Studies section title */
     title: string;
-    /** List of institutions attended */
+    /** Array of educational institutions */
     institutions: Array<{
       /** Institution name */
       name: string;
+      /** Institution logo path */
+      logo?: string;
       /** Description of studies */
       description: React.ReactNode;
     }>;
   };
   /** Technical skills section */
   technical: {
-    /** Whether to display technical skills section */
     display: boolean;
-    /** Title for the technical skills section */
     title: string;
-    /** List of technical skills */
     skills: Array<{
-      /** Skill title */
       title: string;
-      /** Skill description */
-      description?: React.ReactNode;
-      /** Skill tags */
-      tags?: Array<{
-        name: string;
-        icon?: string;
-      }>;
-      /** Images related to the skill */
-      images?: Array<{
-        /** Image source path */
-        src: string;
-        /** Image alt text */
-        alt: string;
-        /** Image width ratio */
-        width: number;
-        /** Image height ratio */
-        height: number;
-      }>;
+      logo?: string;
+      description: React.ReactNode | React.ReactNode[];
+      credlyLink?: string;
+      tags?: Array<{ name: string; icon: string }>;
+      images: Array<{ src: string; alt: string; width: number; height: number }>;
+    }>;
+  };
+  leadership: {
+    display: boolean;
+    title: string;
+    skills: Array<{
+      title: string;
+      logo?: string;
+      description: React.ReactNode | React.ReactNode[];
+      credlyLink?: string;
+      tags?: Array<{ name: string; icon: string }>;
+      images: Array<{ src: string; alt: string; width: number; height: number }>;
     }>;
   };
 }

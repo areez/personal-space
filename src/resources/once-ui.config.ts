@@ -14,14 +14,15 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://areezafsar.com";
 
 const routes: RoutesConfig = {
   "/": true,
   "/about": true,
-  "/work": true,
   "/blog": true,
-  "/gallery": true,
+  "/gallery": false,
+  "/case": true,
+  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": false,
 };
 
 const display: DisplayConfig = {
@@ -33,7 +34,7 @@ const display: DisplayConfig = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
 // Import and set font for each variant
@@ -73,7 +74,7 @@ const fonts: FontsConfig = {
 
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
-  theme: "system", // dark | light | system
+  theme: "dark", // dark | light | system
   neutral: "gray", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
@@ -187,17 +188,17 @@ const mailchimp: MailchimpConfig = {
 // default schema data
 const schema: SchemaConfig = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person",
+  name: "Areez Afsar Khan",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "hello@areezafsar.com",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://www.threads.com/@areez_afsar",
+  linkedin: "https://www.linkedin.com/in/areezafsar/",
+  discord: "https://",
 };
 
 // social sharing configuration for blog posts
@@ -206,9 +207,9 @@ const socialSharing: SocialSharingConfig = {
   platforms: {
     x: true,
     linkedin: true,
-    facebook: false,
+    facebook: true,
     pinterest: false,
-    whatsapp: false,
+    whatsapp: true,
     reddit: false,
     telegram: false,
     email: true,

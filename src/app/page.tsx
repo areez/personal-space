@@ -13,7 +13,7 @@ import {
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
-import { Projects } from "@/components/work/Projects";
+import { ProjectCarouselWrapper } from "@/components/projects/ProjectCarouselWrapper";
 import { Posts } from "@/components/blog/Posts";
 
 export async function generateMetadata() {
@@ -100,9 +100,18 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
+      <Column fillWidth gap="24" marginTop="m" marginBottom="xl" horizontal="center">
+        <RevealFx translateY="12" delay={0.6} horizontal="center">
+          <Heading as="h2" variant="display-strong-xs" wrap="balance" align="center">
+            Featured Projects
+          </Heading>
+        </RevealFx>
+        <RevealFx translateY="16" delay={0.8}>
+          <Column marginTop="l">
+            <ProjectCarouselWrapper />
+          </Column>
+        </RevealFx>
+      </Column>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
@@ -123,7 +132,6 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <Projects range={[2]} />
       <Mailchimp />
     </Column>
   );

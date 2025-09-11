@@ -97,9 +97,9 @@ export default function About() {
               {person.location}
             </Row>
             {person.languages && person.languages.length > 0 && (
-              <Row wrap gap="8">
-                {person.languages.map((language, index) => (
-                  <Tag key={index} size="l">
+              <Row wrap gap="8" marginBottom="l">
+                {person.languages.map((language) => (
+                  <Tag key={language} size="l">
                     {language}
                   </Tag>
                 ))}
@@ -123,7 +123,8 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
-                marginBottom="m"
+                marginTop="l"
+                marginBottom="l"
                 vertical="center"
                 className={styles.blockAlign}
                 style={{
@@ -131,7 +132,7 @@ export default function About() {
                 }}
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">Schedule a call</Row>
+                <Row paddingX="8">Book a Meeting</Row>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -147,6 +148,8 @@ export default function About() {
               className={styles.textAlign}
               variant="display-default-xs"
               onBackground="neutral-weak"
+              marginTop="l"
+              marginBottom="xs"
             >
               {person.role}
             </Text>
@@ -206,15 +209,29 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="4">
+                      <Row gap="8" vertical="center" flex={1}>
+                        {experience.logo && (
+                          <Media
+                            src={experience.logo}
+                            alt={`${experience.company} logo`}
+                            width={3}
+                            height={3}
+                            radius="xs"
+                          />
+                        )}
+                        <Text variant="heading-strong-l">{experience.company}</Text>
+                      </Row>
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
                     </Row>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                    <Text
+                      variant="body-default-s"
+                      onBackground="brand-weak"
+                      marginTop="s"
+                      marginBottom="xs"
+                    >
                       {experience.role}
                     </Text>
                     <Column as="ul" gap="16">
@@ -234,7 +251,7 @@ export default function About() {
                       <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
                         {experience.images.map((image, index) => (
                           <Row
-                            key={index}
+                            key={`${image.src}-${index}`}
                             border="neutral-medium"
                             radius="m"
                             minWidth={image.width}
@@ -264,13 +281,23 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
-                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
-                    </Text>
+                  <Column key={`${institution.name}-${index}`} fillWidth>
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="m">
+                      <Row gap="8" vertical="center" flex={1}>
+                        {institution.logo && (
+                          <Media
+                            src={institution.logo}
+                            alt={`${institution.name} logo`}
+                            width={3}
+                            height={3}
+                            radius="xs"
+                          />
+                        )}
+                        <Text variant="heading-strong-l">{institution.name}</Text>
+                      </Row>
+                      {/* Add timeframe when available in data structure */}
+                    </Row>
+                    <Text variant="body-default-m">{institution.description}</Text>
                   </Column>
                 ))}
               </Column>
@@ -283,46 +310,116 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
+                marginBottom="m"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+              <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text id={skill.title} variant="heading-strong-l">
-                      {skill.title}
-                    </Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
+                  <Column
+                    key={`${skill.title}-${index}`}
+                    fillWidth
+                    className={styles.certificationItem}
+                  >
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="s">
+                      <Row gap="8" vertical="center" flex={1}>
+                        {skill.logo && (
+                          <Media
+                            src={skill.logo}
+                            alt={`${skill.title} logo`}
+                            width={2}
+                            height={2}
+                            radius="xs"
+                          />
+                        )}
+                        <Text variant="heading-strong-l">{skill.title}</Text>
+                      </Row>
+                    </Row>
+                    <Text variant="body-default-m" marginBottom="s">
                       {skill.description}
                     </Text>
+                    {skill.credlyLink && (
+                      <Row marginBottom="m">
+                        <Button
+                          href={skill.credlyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="secondary"
+                          size="s"
+                          suffixIcon="arrowUpRightFromSquare"
+                        >
+                          Verify Credential
+                        </Button>
+                      </Row>
+                    )}
                     {skill.tags && skill.tags.length > 0 && (
-                      <Row wrap gap="8" paddingTop="8">
-                        {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={`${skill.title}-${tagIndex}`} size="l" prefixIcon={tag.icon}>
+                      <Row wrap gap="8">
+                        {skill.tags.map((tag) => (
+                          <Tag key={tag.name} size="s" prefixIcon={tag.icon}>
                             {tag.name}
                           </Tag>
                         ))}
                       </Row>
                     )}
-                    {skill.images && skill.images.length > 0 && (
-                      <Row fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Row
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Row>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+          {about.leadership.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.leadership.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.leadership.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.leadership.skills.map((skill, index) => (
+                  <Column
+                    key={`${skill.title}-${index}`}
+                    fillWidth
+                    className={styles.certificationItem}
+                  >
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="s">
+                      <Row gap="8" vertical="center" flex={1}>
+                        {skill.logo && (
+                          <Media
+                            src={skill.logo}
+                            alt={`${skill.title} logo`}
+                            width={2}
+                            height={2}
+                            radius="xs"
+                          />
+                        )}
+                        <Text variant="heading-strong-l">{skill.title}</Text>
+                      </Row>
+                    </Row>
+                    <Text variant="body-default-m" marginBottom="s">
+                      {skill.description}
+                    </Text>
+                    {skill.credlyLink && (
+                      <Row marginBottom="m">
+                        <Button
+                          href={skill.credlyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="secondary"
+                          size="s"
+                          suffixIcon="arrowUpRightFromSquare"
+                        >
+                          Verify Credential
+                        </Button>
+                      </Row>
+                    )}
+                    {skill.tags && skill.tags.length > 0 && (
+                      <Row wrap gap="8">
+                        {skill.tags.map((tag) => (
+                          <Tag key={tag.name} size="s" prefixIcon={tag.icon}>
+                            {tag.name}
+                          </Tag>
                         ))}
                       </Row>
                     )}
