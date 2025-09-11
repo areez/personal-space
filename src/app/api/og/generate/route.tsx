@@ -1,5 +1,15 @@
 import { ImageResponse } from "next/og";
-import { baseURL, person } from "@/resources";
+
+// Minimal data for OG generation to avoid large bundle
+const person = {
+  name: "Areez Afsar Khan",
+  firstName: "Areez",
+  lastName: "Khan",
+  role: "Entrepreneur & Tech Consultant",
+  avatar: "/images/avatar.jpg",
+};
+
+const baseURL = "https://areezafsar.com";
 
 export const runtime = "edge";
 
