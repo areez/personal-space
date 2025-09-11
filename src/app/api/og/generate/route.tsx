@@ -105,9 +105,12 @@ export async function GET(request: Request) {
       </div>
     </div>,
     {
-      width: 1280,
-      height: 720,
-
+      width: 1200,
+      height: 630,
+      headers: {
+        'Content-Type': 'image/png',
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
     },
   );
 }
