@@ -46,7 +46,7 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Personal Space`,
-  description: `Portfolio website showcasing my thoughts and ideas as a ${person.role}`,
+  description: `Showcasing my thoughts and ideas as a ${person.role}`,
   headline: <>Benchmarking with the best globally, to build better locally</>,
   featured: {
     display: true,
