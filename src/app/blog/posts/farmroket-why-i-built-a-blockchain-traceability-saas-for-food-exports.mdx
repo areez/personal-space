@@ -1,92 +1,33 @@
 ---
 title: "FarmRoket: Why I Built a Blockchain Traceability SaaS for Food Exports"
-summary: "## From Seeds to Software: Why I Built FarmRoket"
+summary: "How I turned regulatory challenges in agriculture into an opportunity for blockchain-backed transparency with FarmRoket."
 image: "/images/hero/farmroket-why-i-built-a-blockchain-traceability-saas-for-food-exports.jpg"
 publishedAt: "2024-01-18"
-tag: "agritech, blockchain, traceability"
+tag: "article, agritech, blockchain, traceability"
 ---
 
-## From Seeds to Software: Why I Built FarmRoket
+## Building FarmRoket: A Blockchain Traceability SaaS for Food Exports
 
-I didn’t plan to become an AgriTech founder. My entry was sideways—through a partnership with a seed company called **CropRocket Limited**. On paper I was the “tech guy,” but I was standing in fields, talking to farmers, and tracing supply chains that stretched from villages to airports. The more I learned, the more one question kept repeating in my head: **Why can’t we export fresh produce from Bangladesh into high‑value markets at scale?**
+When I began working with CropRocket Limited in Bangladesh’s seed business, I expected the usual lessons about crop science and farm productivity. What I discovered instead was a deeper systemic challenge: Bangladesh’s inability to export fresh produce directly to the United States or European Union. It wasn’t a matter of quality alone—it was about traceability. And that realization sparked the creation of FarmRoket.
 
-The answer I found was simple and frustrating: **traceability**. Not the performative kind where someone fills out a form at the airport during packaging. Real, auditable traceability that survives regulatory scrutiny in Brussels or Washington and builds consumer trust at a supermarket shelf in Dubai or London.
+### The Traceability Challenge
 
----
-## The Gatekeepers: EU 178/2002 and FDA FSMA 204
+Exporters in Bangladesh relied on handwritten documentation, often filled at airports during packaging. These records failed the fundamental requirements of EU Regulation 178/2002, which requires traceability “at all stages of production, processing and distribution.” Similarly, the U.S. Food Safety Modernization Act placed detailed record-keeping expectations on high-risk foods. Without credible, verifiable systems, exporters faced the risk of entire shipments being rejected at the border.
 
-My turning point came when I dove into the legal and operational side of food exports. The EU’s **General Food Law—Regulation (EC) No 178/2002**—spells it out in **Article 18**: food business operators must ensure **traceability at all stages** of production, processing, and distribution. They must be able to identify the **one step back** (their supplier) and the **one step forward** (their customer) and produce that documentation quickly when requested.
+### Research and Market Lessons
 
-In the United States, the **FDA’s Food Safety Modernization Act (FSMA) Section 204** set out the Food Traceability Rule and a **Food Traceability List (FTL)** with record‑keeping requirements for specified high‑risk foods. The message is clear: if you can’t **prove** where your food came from, how it was handled, and who touched it, you don’t get to sell in their markets—full stop.
+International development organizations such as USAID highlighted the importance of Good Agricultural Practices (GAP), contract farming, and Hazard Analysis and Critical Control Points (HACCP) protocols. Transparency was no longer optional—it was required. Global surveys reinforced this: more than 70% of consumers said they would pay more for transparent and sustainable products. Demand for end-to-end visibility was a market reality.
 
-Reading through USAID export readiness material and contract farming templates only reinforced this. Modern agriculture isn’t just seeds and soil—it’s **proof at scale**: geo‑tagged plots, recorded inputs, pesticide diaries, harvest logs, cold‑chain data, and chain‑of‑custody events that survive audits.
+### Why Blockchain?
 
----
-## Paper Isn’t Proof
+Centralized systems and paperwork are vulnerable to tampering. Blockchain provided a way to record farm-level practices, packaging details, and shipment logs immutably. In FarmRoket, farmers could log seed varieties and inputs, exporters could track packaging and logistics, and consumers could scan QR codes to see provenance. The ledger created trust among stakeholders without depending on a single gatekeeper.
 
-For years, “traceability” during export in Bangladesh meant manual forms completed at packaging time, often just hours before cargo loaded. That system satisfies nobody. It can’t surface upstream practices (seed varietal, fertilizer and pesticide use, GAP compliance), it can’t convincingly track a product across handlers, and it can’t answer a regulator’s most basic question: *Show me the evidence.*
+### From MVP to Global SaaS
 
-What exporters, regulators, retailers, and consumers need is a **shared foundation of truth**—a ledger that isn’t controlled by one party, can’t be quietly edited, and is accessible on demand. That’s why I built **FarmRoket** as a **blockchain‑backed traceability SaaS**.
+The minimum viable product we built demonstrated feasibility: farmers logging data via mobile apps, exporters adding packaging and logistics details, and regulators able to check immutable records. Even in its earliest form, FarmRoket made transparent trade possible.
 
----
-## Why Blockchain (and Why Now)
+The challenges were significant—educating farmers, persuading exporters, and navigating the lack of immediate enforcement. Yet the opportunity is global. Countries in Asia, Africa, and Latin America face similar hurdles. As regulations tighten, demand for transparent, blockchain-backed traceability will accelerate. FarmRoket was built for this future.
 
-Blockchain is not a buzzword when you use it for what it’s good at: **tamper‑evident, append‑only records** shared across organizations that don’t fully trust each other. In agri export, multiple entities—farmers, collection centers, processors, cold‑chain operators, logistics providers, exporters, importers, retailers, regulators—need a **single view** of the truth with **clear provenance**. A public or consortium chain brings the right properties: immutability, transparency (with controlled privacy), and verifiability.
+### Conclusion
 
-### What FarmRoket tracks
-- **Seed & plot provenance**: variety, lot IDs, geofenced plots, sowing/harvest dates.  
-- **Inputs & practices**: fertilizer and pesticide logs aligned to GAP benchmarks.  
-- **Process events**: washing, grading, packing, cold‑store ingress/egress with timestamps and handlers.  
-- **Logistics & export**: container IDs, airway bills, temperature breaches, customs events.  
-- **Retail & consumer**: shelf‑readiness, QR scans, and consumer‑visible product journeys.
-
-### The user experience
-- **Farm‑edge apps** (low‑friction Android) for farmers and field officers.  
-- **Exporter console** for batch creation, documentation, and audit trails.  
-- **Regulator view** with targeted queries (“show me inputs for lot X,” “show me handlers in last 36 hours”).  
-- **Consumer QR** that turns a label into a story, not a claim.
-
----
-## The Data & Incentive Problem
-
-Technology is the last mile. The first mile is incentives, training, and workflows that respect how food *actually* moves. In Bangladesh (and many similar markets), farmers are busy; field officers are stretched; exporters are wary of new overhead; and consumers are price‑sensitive. So FarmRoket’s MVP focused on **simplicity** and **clear value**:
-
-- **On‑ramp**: Start with one crop, one district, a few motivated exporters.  
-- **Minimal fields**: Capture what proves compliance; resist “data greed.”  
-- **Feedback loop**: Analytics that reward good practices with higher acceptance rates and better buyer confidence.  
-- **QR moments**: Give exporters and retailers a **marketing asset**—trusted transparency sells.
-
----
-## Conversations that Shaped the Product
-
-I sat with exporters, trade associations, farmers, and technologists. Exporters told me: *We know this is coming; we just don’t know when enforcement will bite.* Farmers said: *We will do what buyers pay for and what field officers support us to do.* Regulators said: *Make it auditable. If we can query it and rely on it, we’ll support it.*
-
-That triangulation shaped FarmRoket’s priorities: **auditability**, **edge usability**, and **export value**.
-
----
-## Architecture at a Glance
-
-- **Edge capture**: Progressive web app + Android, lightweight offline cache, sync on connectivity.  
-- **Core services**: Event pipeline, validation rules, anomaly detection (e.g., pesticide log out of cycle).  
-- **Ledger**: Writes key events to a public/consortium blockchain with proofs anchored (Merkle commitments).  
-- **Privacy**: Sensitive data (e.g., farmer identity) stays off‑chain with access controls; hashes and proofs on‑chain.  
-- **Analytics**: Batch health scores, GAP conformance trends, export‑readiness reports.  
-
----
-## Where We Are Now
-
-We shipped an MVP. It’s being extended with pilot partners. The market is early, but **regulatory pressure is rising**. As the EU and FDA continue to tighten expectations, a compliant, auditable chain of custody will shift from “nice to have” to **non‑negotiable**. When that happens, ready exporters will own the early advantage.
-
----
-## Go‑to‑Market and Pricing
-
-FarmRoket is designed as a **global SaaS** with local empathy. Pricing mirrors impact: start small per‑batch/per‑export fees, with enterprise tiers for exporters and retailers. For farmer networks and NGOs, we offer **sponsored onboarding** where large buyers underwrite the first mile. Adoption begins where urgency is highest—**exporters under regulatory pressure**—and grows to retailers and eventually consumers who scan and verify.
-
----
-## What I Believe
-
-- **Traceability isn’t a feature; it’s a license to operate** in premium markets.  
-- **Proof beats promises**—for regulators, for retailers, and for consumers.  
-- The winners will align **incentives + training + technology**. Doing one without the others just burns goodwill.
-
-If you’re an exporter, regulator, or retailer who wants to **prove** your chain of custody rather than just **claim** it, that’s who I built FarmRoket for. The sooner we build trust into the food system, the more value flows back to the people who grow our food.
+FarmRoket is more than a startup idea; it’s a necessity. Without robust traceability, exporters risk exclusion from key markets. With it, they gain trust, access, and competitive advantage. The journey from seeds to software taught me that technology, when aligned with compliance and market demand, can change the trajectory of entire industries.

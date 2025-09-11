@@ -143,14 +143,7 @@ const about: About = {
             AWS, Google, Hoteza, and Odoo.
           </>,
         ],
-        images: [
-          {
-            src: "/images/case/project-01/cover-01.jpg",
-            alt: "Valiant Technologies",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         company: "FarmRoket™",
