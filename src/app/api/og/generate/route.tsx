@@ -7,20 +7,7 @@ export async function GET(request: Request) {
   let url = new URL(request.url);
   let title = url.searchParams.get("title") || "Portfolio";
 
-  async function loadGoogleFont(font: string) {
-    const url = `https://fonts.googleapis.com/css2?family=${font}`;
-    const css = await (await fetch(url)).text();
-    const resource = css.match(/src: url\((.+)\) format\('(opentype|truetype)'\)/);
 
-    if (resource) {
-      const response = await fetch(resource[1]);
-      if (response.status == 200) {
-        return await response.arrayBuffer();
-      }
-    }
-
-    throw new Error("failed to load font data");
-  }
 
   return new ImageResponse(
     <div
@@ -48,6 +35,7 @@ export async function GET(request: Request) {
             fontSize: "6rem",
             lineHeight: "8rem",
             letterSpacing: "-0.05em",
+            fontFamily: "system-ui, -apple-system, sans-serif",
             whiteSpace: "wrap",
             textWrap: "balance",
             overflow: "hidden",
@@ -83,6 +71,7 @@ export async function GET(request: Request) {
               style={{
                 fontSize: "4.5rem",
                 lineHeight: "4.5rem",
+                fontFamily: "system-ui, -apple-system, sans-serif",
                 whiteSpace: "pre-wrap",
                 textWrap: "balance",
               }}
@@ -93,6 +82,7 @@ export async function GET(request: Request) {
               style={{
                 fontSize: "2.5rem",
                 lineHeight: "2.5rem",
+                fontFamily: "system-ui, -apple-system, sans-serif",
                 whiteSpace: "pre-wrap",
                 textWrap: "balance",
                 opacity: "0.6",
@@ -107,13 +97,7 @@ export async function GET(request: Request) {
     {
       width: 1280,
       height: 720,
-      fonts: [
-        {
-          name: "Geist",
-          data: await loadGoogleFont("Geist:wght@400"),
-          style: "normal",
-        },
-      ],
+
     },
   );
 }
