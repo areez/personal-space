@@ -41,7 +41,7 @@ export const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
           }))}
         />
       </div>
-      <Column fillWidth gap="s" marginTop="-16" s={{ marginTop: "xs" }} style={{ margin: 0, padding: 0 }}>
+      <Column fillWidth gap="s" s={{ marginTop: "xs" }} style={{ marginTop: "-16px", margin: 0, padding: 0 }}>
         {title && (
           <Heading as="h2" wrap="balance" variant="heading-strong-xl">
             {title}
