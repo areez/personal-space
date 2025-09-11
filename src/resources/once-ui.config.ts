@@ -20,9 +20,9 @@ const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/blog": true,
-  "/gallery": true,
+  "/gallery": false,
   "/case": true,
-  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": false,
 };
 
 const display: DisplayConfig = {
