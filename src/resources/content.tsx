@@ -66,7 +66,7 @@ const home: Home = {
       I&apos;m Areez, founder of{" "}
       <Logo
         dark
-        icon="/trademarks/wordmark-dark.svg"
+        icon="/trademarks/wordmark-light.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
       , where I lead a team of product engineers and following a cloud-first approach to build
