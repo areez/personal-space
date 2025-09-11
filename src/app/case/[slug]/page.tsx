@@ -23,7 +23,7 @@ import { Metadata } from "next";
 import { CaseStudiesCarousel } from "@/components/projects/CaseStudiesCarousel";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "projects", "projects"]);
+  const posts = getPosts(["src", "app", "case", "case"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -39,7 +39,7 @@ export async function generateMetadata({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const posts = getPosts(["src", "app", "projects", "projects"]);
+  const posts = getPosts(["src", "app", "case", "case"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -63,7 +63,7 @@ export default async function Project({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  let post = getPosts(["src", "app", "projects", "projects"]).find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "case", "case"]).find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
@@ -94,8 +94,8 @@ export default async function Project({
         }}
       />
       <Column maxWidth="s" gap="16" horizontal="center" align="center">
-        <SmartLink href="/projects">
-          <Text variant="label-strong-m">Projects</Text>
+        <SmartLink href="/case">
+          <Text variant="label-strong-m">Case Studies</Text>
         </SmartLink>
         <Text variant="body-default-xs" onBackground="neutral-weak" marginBottom="12">
           {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
@@ -140,7 +140,7 @@ export default async function Project({
           Read other Case Studies
         </Heading>
         <CaseStudiesCarousel 
-           projects={getPosts(["src", "app", "projects", "projects"])
+           projects={getPosts(["src", "app", "case", "case"])
              .filter((p) => p.slug !== post.slug)
              .sort((a, b) => new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime())
            }

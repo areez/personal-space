@@ -14,8 +14,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
-  description: <>My weekly newsletter about technology and creativity</>,
+  title: <>Subscribe to {person.firstName}&apos;s Blogs</>,
+  description: <>My monthly blog updates about technology, business, leadership and philosophy.</>,
 };
 
 const social: Social = [
@@ -52,14 +52,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Areez</strong>{" "}
+        <strong className="ml-4">Areez's</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured thoughts
+          Featured Thought
         </Text>
       </Row>
     ),
-    href: "/projects/benchmark-talent-build-global",
+    href: "/case/benchmark-talent-build-global",
   },
   subline: (
     <>
@@ -145,7 +145,7 @@ const about: About = {
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/case/project-01/cover-01.jpg",
             alt: "Valiant Technologies",
             width: 16,
             height: 9,
@@ -391,15 +391,15 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Insights on technology, business, leadership and philosophy",
   description: `Read what ${person.name} has been up to recently`,
 };
 
 const work: Work = {
-  path: "/projects", // Changed from "/work" to "/projects"
-  label: "Projects",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  path: "/case", // Changed from "/projects" to "/case"
+  label: "Case Study",
+  title: `Case Studies – ${person.name}`,
+  description: `Design and dev case studies by ${person.name}`,
 };
 
 const gallery: Gallery = {

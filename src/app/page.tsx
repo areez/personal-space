@@ -103,7 +103,7 @@ export default function Home() {
       <Column fillWidth gap="24" marginTop="m" marginBottom="xl" horizontal="center">
         <RevealFx translateY="12" delay={0.6} horizontal="center">
           <Heading as="h2" variant="display-strong-xs" wrap="balance" align="center">
-            My Featured Projects
+            Featured Projects
           </Heading>
         </RevealFx>
         <RevealFx translateY="16" delay={0.8}>

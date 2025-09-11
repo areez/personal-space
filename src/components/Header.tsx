@@ -109,21 +109,21 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes["/projects"] && (
+              {routes["/case"] && (
                 <>
-                  <Row key="projects-desktop" s={{ hide: true }}>
+                  <Row key="case-studies-desktop" s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="grid"
-                      href="/projects"
+                      href="/case"
                       label={work.label}
-                      selected={pathname.startsWith("/projects")}
+                      selected={pathname.startsWith("/case")}
                     />
                   </Row>
-                  <Row key="projects-mobile" hide s={{ hide: false }}>
+                  <Row key="case-studies-mobile" hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="grid"
-                      href="/projects"
-                      selected={pathname.startsWith("/projects")}
+                      href="/case"
+                      selected={pathname.startsWith("/case")}
                     />
                   </Row>
                 </>

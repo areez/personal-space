@@ -46,7 +46,7 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
         <RevealFx key={currentProject.slug} translateY="8" fillWidth>
           <ProjectCard
             priority={true}
-            href={`/projects/${currentProject.slug}`}
+            href={`/case/${currentProject.slug}`}
             images={currentProject.metadata.images || []}
             title={currentProject.metadata.title}
             description={currentProject.metadata.summary}

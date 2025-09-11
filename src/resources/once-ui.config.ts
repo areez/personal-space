@@ -21,8 +21,8 @@ const routes: RoutesConfig = {
   "/about": true,
   "/blog": true,
   "/gallery": true,
-  "/projects": true,
-  "/projects/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/case": true,
+  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
 const display: DisplayConfig = {
@@ -34,7 +34,7 @@ const display: DisplayConfig = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
-  "/projects/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/case/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
 // Import and set font for each variant
@@ -198,7 +198,7 @@ const schema: SchemaConfig = {
 const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@areez_afsar",
   linkedin: "https://www.linkedin.com/in/areezafsar/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  discord: "https://",
 };
 
 // social sharing configuration for blog posts

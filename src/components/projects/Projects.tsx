@@ -9,7 +9,7 @@ interface ProjectsProps {
 }
 
 export function Projects({ range, exclude, specificSlug }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "projects", "projects"]);
+  let allProjects = getPosts(["src", "app", "case", "case"]);
 
   // If a specific slug is provided, filter to show only that project
   if (specificSlug) {
@@ -45,7 +45,7 @@ export function Projects({ range, exclude, specificSlug }: ProjectsProps) {
         <ProjectCard
           priority={index < 2}
           key={post.slug}
-          href={`/projects/${post.slug}`}
+          href={`/case/${post.slug}`}
           images={post.metadata.images}
           title={post.metadata.title}
           description={post.metadata.summary}

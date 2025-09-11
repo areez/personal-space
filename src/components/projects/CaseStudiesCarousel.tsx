@@ -58,7 +58,7 @@ export function CaseStudiesCarousel({ projects }: CaseStudiesCarouselProps) {
           <CaseStudyCard
             priority={false}
             key={post.slug}
-            href={`/projects/${post.slug}`}
+            href={`/case/${post.slug}`}
             images={post.metadata.images}
             title={post.metadata.title}
             description={post.metadata.summary}

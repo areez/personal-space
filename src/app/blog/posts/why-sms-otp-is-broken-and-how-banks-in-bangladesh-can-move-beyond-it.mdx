@@ -1,0 +1,57 @@
+---
+title: "Why SMS OTP Is Broken—and How Banks in Bangladesh Can Move Beyond It"
+summary: "## Why SMS OTP Is Broken—and How We Can Migrate Without Chaos"
+image: "/images/hero/why-sms-otp-is-broken-and-how-banks-in-bangladesh-can-move-beyond-it.jpg"
+publishedAt: "2024-04-05"
+tag: "security, banking, authentication"
+---
+
+## Why SMS OTP Is Broken—and How We Can Migrate Without Chaos
+
+If you bank online in Bangladesh, you’ve probably typed a six‑digit SMS code more times than you can count. It feels reassuring. But security isn’t about feelings—it’s about threat models and failure modes. And SMS OTP fails too many of them.
+
+---
+## The Real Threats (Not Just Theoretical)
+
+**SS7 network weaknesses** allow attackers to intercept messages at the telecom signaling layer. **SIM‑swap fraud** lets criminals socially‑engineer carriers into porting your number to a new SIM. **Mobile malware** hooks into notification services and reads your SMS silently. **Reverse proxy phishing** captures your credentials and relays the OTP to the bank in real time, all while showing you a convincing fake page.
+
+None of this is hypothetical. That’s why **[NIST SP 800‑63B](https://pages.nist.gov/800-63-3/sp800-63b.html)** treats SMS as a **restricted** authenticator—use it only when stronger methods aren’t feasible, and plan a path away from it.
+
+---
+## Bangladesh’s Adoption Reality
+
+Bangladesh’s digital banking user base is broad and diverse. Forcing a hard cut‑over away from SMS overnight would cause confusion, support overload, and potentially lock out vulnerable users. Regulators could mandate change with a circular, but **adoption is as much education as it is engineering**. At the same time, the threat environment isn’t waiting for us to get comfortable.
+
+The right path is a **phased migration** that balances risk reduction with user readiness.
+
+---
+## A Practical Migration Plan
+
+1. **App‑based approvals with device binding**  
+   Ship a secure banking app or SDK that binds to a device cryptographically. Approvals are pushed to the app; users confirm with biometrics. This removes SMS from the loop and kills most phishing proxies.
+
+2. **Passkeys (FIDO2/WebAuthn)** for mainstream users  
+   Passkeys replace passwords and OTPs with hardware‑backed cryptography and platform biometrics (Face ID, Android Biometrics). They’re phishing‑resistant and increasingly supported by major browsers and OSs. Start with high‑risk transactions, then move to logins.
+
+3. **Hardware security keys** for admins and high‑risk roles  
+   System administrators, treasury ops, and privileged users should use physical keys (e.g., FIDO keys). The cost is justified by the blast radius if an admin account is compromised.
+
+4. **Step‑up MFA**  
+   Challenge when risk is high: new device, new location, high‑value transfer, anomalous behavior. Keep low‑risk actions smooth to avoid user backlash.
+
+5. **Customer education & comms**  
+   Use in‑app education, SMS, email, and call‑center scripts. Explain *why* approvals are changing and *how* to stay safe. Adoption accelerates when users feel respected, not forced.
+
+---
+## Metrics That Matter
+
+- **Fraud rate** per million transactions (should drop).  
+- **False‑positive challenge rate** (should not spike).  
+- **Customer support tickets** specific to auth (should stabilize after rollout).  
+- **Completion time** for approvals (UX must get faster, not slower).  
+- **Passkey enrollment rate** (track weekly).
+
+---
+## My POV
+
+Waiting for a catastrophic breach to force migration is a mistake. The threat is already here. The plan isn’t to flip a switch—it’s to **sequence the change** so customers barely feel the friction while attackers feel the door closing. If you’re a bank leader or a regulator, your job is to set the path, set the metrics, and start moving now.

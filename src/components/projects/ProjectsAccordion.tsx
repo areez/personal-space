@@ -95,7 +95,7 @@ export const ProjectsAccordion: React.FC<ProjectsAccordionProps> = ({
                     <Flex gap="16" wrap>
                       <SmartLink
                         suffixIcon="arrowRight"
-                        href={`/projects/${project.slug}`}
+                        href={`/case/${project.slug}`}
                         className={styles.caseStudyLink}
                       >
                         <Text variant="body-default-s">Read case study</Text>
