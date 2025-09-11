@@ -98,8 +98,8 @@ export default function About() {
             </Row>
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8" marginBottom="l">
-                {person.languages.map((language, index) => (
-                  <Tag key={index} size="l">
+                {person.languages.map((language) => (
+                  <Tag key={language} size="l">
                     {language}
                   </Tag>
                 ))}
@@ -251,7 +251,7 @@ export default function About() {
                       <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
                         {experience.images.map((image, index) => (
                           <Row
-                            key={index}
+                            key={`${image.src}-${index}`}
                             border="neutral-medium"
                             radius="m"
                             minWidth={image.width}
@@ -354,8 +354,8 @@ export default function About() {
                     )}
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8">
-                        {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={tagIndex} size="s" prefixIcon={tag.icon}>
+                        {skill.tags.map((tag) => (
+                          <Tag key={tag.name} size="s" prefixIcon={tag.icon}>
                             {tag.name}
                           </Tag>
                         ))}
@@ -416,8 +416,8 @@ export default function About() {
                     )}
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8">
-                        {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={tagIndex} size="s" prefixIcon={tag.icon}>
+                        {skill.tags.map((tag) => (
+                          <Tag key={tag.name} size="s" prefixIcon={tag.icon}>
                             {tag.name}
                           </Tag>
                         ))}

@@ -20,10 +20,10 @@ import { baseURL, about, person, work } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
-import { Projects } from "@/components/work/Projects";
+import { CaseStudiesCarousel } from "@/components/projects/CaseStudiesCarousel";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "work", "projects"]);
+  const posts = getPosts(["src", "app", "projects", "projects"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -39,7 +39,7 @@ export async function generateMetadata({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const posts = getPosts(["src", "app", "work", "projects"]);
+  const posts = getPosts(["src", "app", "projects", "projects"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -63,7 +63,7 @@ export default async function Project({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "projects", "projects"]).find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
@@ -94,7 +94,7 @@ export default async function Project({
         }}
       />
       <Column maxWidth="s" gap="16" horizontal="center" align="center">
-        <SmartLink href="/work">
+        <SmartLink href="/projects">
           <Text variant="label-strong-m">Projects</Text>
         </SmartLink>
         <Text variant="body-default-xs" onBackground="neutral-weak" marginBottom="12">
@@ -116,7 +116,7 @@ export default async function Project({
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="s" />}
           <Text variant="label-default-m" onBackground="brand-weak">
             {post.metadata.team?.map((member, idx) => (
-              <span key={idx}>
+              <span key={`${member.name}-${idx}`}>
                 {idx > 0 && (
                   <Text as="span" onBackground="neutral-weak">
                     ,{" "}
@@ -137,9 +137,14 @@ export default async function Project({
       <Column fillWidth gap="40" horizontal="center" marginTop="40">
         <Line maxWidth="40" />
         <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
-          Related projects
+          Read other Case Studies
         </Heading>
-        <Projects exclude={[post.slug]} range={[2]} />
+        <CaseStudiesCarousel 
+           projects={getPosts(["src", "app", "projects", "projects"])
+             .filter((p) => p.slug !== post.slug)
+             .sort((a, b) => new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime())
+           }
+         />
       </Column>
       <ScrollToHash />
     </Column>

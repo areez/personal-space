@@ -14,7 +14,7 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: <>My weekly newsletter about technology and creativity</>,
 };
 
@@ -59,11 +59,11 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/benchmark-talent-build-global",
+    href: "/projects/benchmark-talent-build-global",
   },
   subline: (
     <>
-      I'm Areez, founder of{" "}
+      I&apos;m Areez, founder of{" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
@@ -99,7 +99,7 @@ const about: About = {
     description: (
       <>
         Areez Afsar Khan is an entrepreneur, independent technology consultant, and brand strategist
-        from Dhaka, Bangladesh. He is an IBM-certified Software Engineer with a Bachelor's degree in
+        from Dhaka, Bangladesh. He is an IBM-certified Software Engineer with a Bachelor&apos;s degree in
         Business Administration from North South University.
         <br />
         <br />
@@ -170,6 +170,23 @@ const about: About = {
         images: [],
       },
       {
+        company: "Starfare",
+        logo: "/images/logos/shuktara-travels.svg", // Changed from .png to .svg
+        timeframe: "2018 - Present",
+        role: "Co-founder",
+        achievements: [
+          <>
+            Co-founded a leading online travel agency providing efficient outbound travel solutions
+            for B2B & B2C clients.
+          </>,
+          <>
+            Utilizes aggregated flight APIs and offers reservation services for travel agents, SMEs,
+            and corporate clients.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "CropRocket Limited",
         logo: "/images/logos/croprocket.svg", // Changed from .png to .svg
         timeframe: "2021 - Present",
@@ -187,23 +204,6 @@ const about: About = {
         images: [],
       },
       {
-        company: "Shuktara Travels",
-        logo: "/images/logos/shuktara-travels.svg", // Changed from .png to .svg
-        timeframe: "2018 - Present",
-        role: "Co-founder",
-        achievements: [
-          <>
-            Co-founded a leading online travel agency providing efficient outbound travel solutions
-            for B2B & B2C clients.
-          </>,
-          <>
-            Utilizes aggregated flight APIs and offers reservation services for travel agents, SMEs,
-            and corporate clients.
-          </>,
-        ],
-        images: [],
-      },
-      {
         company: "Ethics Advance Technology Ltd.",
         logo: "/images/logos/eatl.svg", // Changed from .png to .svg
         timeframe: "2014 - 2015",
@@ -211,14 +211,14 @@ const about: About = {
         achievements: [
           <>
             Coordinated a nationwide campaign across 53 universities and organized the Bootcamp for
-            the EATL–Prothom Alo App Development Contest 2014, raising USD 200k through proposals.
+            the EATL&ndash;Prothom Alo App Development Contest 2014, raising USD 200k through proposals.
           </>,
           <>
-            Contributed to the success of the "National Mobile Application Trainer Program
-            (2014–2015)" for the ICT Division, Ministry of Post, Telecommunication & IT.
+            Contributed to the success of the &quot;National Mobile Application Trainer Program
+            (2014&ndash;2015)&quot; for the ICT Division, Ministry of Post, Telecommunication & IT.
           </>,
           <>
-            Contributed to the success of "Learning & Earning Development Project (2015)" under the
+            Contributed to the success of &quot;Learning & Earning Development Project (2015)&quot; under the
             ICT Division, Ministry of Post, Telecommunication & Technology.
           </>,
         ],
@@ -396,8 +396,8 @@ const blog: Blog = {
 };
 
 const work: Work = {
-  path: "/work",
-  label: "Projects", // Changed from "Work" to "Projects"
+  path: "/projects", // Changed from "/work" to "/projects"
+  label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
 };

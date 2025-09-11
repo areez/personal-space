@@ -9,6 +9,7 @@ import {
   SmartLink,
   Text,
 } from "@once-ui-system/core";
+import styles from "./ProjectCard.module.scss";
 
 interface ProjectCardProps {
   href: string;
@@ -31,20 +32,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
 }) => {
   return (
-    <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+    <Column fillWidth gap="m" className={styles.projectCard}>
+      <div className={styles.carouselContainer}>
+        <Carousel
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 480px"
+          items={images.map((image) => ({
+            slide: image,
+            alt: title,
+          }))}
+        />
+      </div>
       <Flex
         s={{ direction: "column" }}
         fillWidth
-        paddingX="s"
-        paddingTop="12"
-        paddingBottom="24"
+        className={styles.contentContainer}
         gap="l"
       >
         {title && (

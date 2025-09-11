@@ -87,12 +87,12 @@ export const Header = () => {
           >
             <Row gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
-                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
+                <ToggleButton key="home" prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
-              <Line background="neutral-alpha-medium" vert maxHeight="24" />
+              <Line key="separator-1" background="neutral-alpha-medium" vert maxHeight="24" />
               {routes["/about"] && (
                 <>
-                  <Row s={{ hide: true }}>
+                  <Row key="about-desktop" s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
@@ -100,7 +100,7 @@ export const Header = () => {
                       selected={pathname === "/about"}
                     />
                   </Row>
-                  <Row hide s={{ hide: false }}>
+                  <Row key="about-mobile" hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
@@ -109,28 +109,28 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes["/work"] && (
+              {routes["/projects"] && (
                 <>
-                  <Row s={{ hide: true }}>
+                  <Row key="projects-desktop" s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="grid"
-                      href="/work"
+                      href="/projects"
                       label={work.label}
-                      selected={pathname.startsWith("/work")}
+                      selected={pathname.startsWith("/projects")}
                     />
                   </Row>
-                  <Row hide s={{ hide: false }}>
+                  <Row key="projects-mobile" hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="grid"
-                      href="/work"
-                      selected={pathname.startsWith("/work")}
+                      href="/projects"
+                      selected={pathname.startsWith("/projects")}
                     />
                   </Row>
                 </>
               )}
               {routes["/blog"] && (
                 <>
-                  <Row s={{ hide: true }}>
+                  <Row key="blog-desktop" s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="book"
                       href="/blog"
@@ -138,7 +138,7 @@ export const Header = () => {
                       selected={pathname.startsWith("/blog")}
                     />
                   </Row>
-                  <Row hide s={{ hide: false }}>
+                  <Row key="blog-mobile" hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="book"
                       href="/blog"
@@ -149,7 +149,7 @@ export const Header = () => {
               )}
               {routes["/gallery"] && (
                 <>
-                  <Row s={{ hide: true }}>
+                  <Row key="gallery-desktop" s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="gallery"
                       href="/gallery"
@@ -157,7 +157,7 @@ export const Header = () => {
                       selected={pathname.startsWith("/gallery")}
                     />
                   </Row>
-                  <Row hide s={{ hide: false }}>
+                  <Row key="gallery-mobile" hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="gallery"
                       href="/gallery"
@@ -168,8 +168,8 @@ export const Header = () => {
               )}
               {display.themeSwitcher && (
                 <>
-                  <Line background="neutral-alpha-medium" vert maxHeight="24" />
-                  <ThemeToggle />
+                  <Line key="separator-2" background="neutral-alpha-medium" vert maxHeight="24" />
+                  <ThemeToggle key="theme-toggle" />
                 </>
               )}
             </Row>
