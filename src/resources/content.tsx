@@ -69,10 +69,9 @@ const home: Home = {
         icon="/trademarks/wordmark-light.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I lead a team of product engineers and following a cloud-first approach to build
-      scalable, secure, and user-centric solutions. Outside of work, I love experimenting with new
-      ideas, writing about tech, engaging with the community, and exploring ways to solve real-world
-      business problems.
+      , where I lead a team of product engineers and build scalable, secure, and user-centric
+      solutions. Outside of work, I love experimenting with new ideas, writing about tech,
+      engaging with the community, and exploring ways to solve real-world business problems.
     </>
   ),
 };
