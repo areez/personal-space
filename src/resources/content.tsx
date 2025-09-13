@@ -383,14 +383,14 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Tech Blog - Software Engineering, Entrepreneurship & Digital Transformation Insights",
+  title: "Blogs related to Product Development, Trending Tech Issues, Engineering & Philosophy",
   description: `Read Areez Afsar Khan's insights on software engineering, entrepreneurship, digital transformation, cloud computing, SaaS development, and startup leadership. Expert perspectives on technology trends and business innovation.`,
 };
 
 const work: Work = {
   path: "/case", // Changed from "/projects" to "/case"
   label: "Case Study",
-  title: `Software Engineering Case Studies - Cloud Solutions & Digital Transformation Projects`,
+  title: `Business & Product Case Studies`,
   description: `Explore Areez Afsar Khan's software engineering case studies featuring cloud solutions, digital transformation projects, SaaS development, and enterprise software implementations. Real-world examples of scalable technology solutions.`,
 };
 

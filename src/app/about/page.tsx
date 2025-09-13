@@ -63,7 +63,7 @@ export default function About() {
   ];
 
   return (
-    <>
+    <Column maxWidth="m">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -91,13 +91,15 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Row fillWidth s={{ direction: "column" }} horizontal="center">
+      <Row fillWidth s={{ direction: "column"}} horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
-            position="sticky"
             top="64"
-            s={{ position: "relative" }}
+            fitHeight
+            position="sticky"
+            s={{ position: "relative", style: { top: "auto" } }}
+            xs={{ style: { top: "auto" } }}
             minWidth="160"
             paddingX="l"
             paddingBottom="xl"
@@ -111,7 +113,7 @@ export default function About() {
               {person.location}
             </Row>
             {person.languages && person.languages.length > 0 && (
-              <Row wrap gap="8" marginBottom="l">
+              <Row wrap gap="8">
                 {person.languages.map((language) => (
                   <Tag key={language} size="l">
                     {language}
@@ -137,8 +139,7 @@ export default function About() {
                 radius="full"
                 padding="4"
                 gap="8"
-                marginTop="l"
-                marginBottom="l"
+                marginBottom="m"
                 vertical="center"
                 className={styles.blockAlign}
                 style={{
@@ -162,22 +163,20 @@ export default function About() {
               className={styles.textAlign}
               variant="display-default-xs"
               onBackground="neutral-weak"
-              marginTop="l"
-              marginBottom="xs"
             >
               {person.role}
             </Text>
             {social.length > 0 && (
               <Row
-                className={styles.blockAlign}
-                paddingTop="20"
-                paddingBottom="8"
-                gap="8"
-                wrap
-                horizontal="center"
-                fitWidth
-                data-border="rounded"
-              >
+              className={styles.blockAlign}
+              paddingTop="20"
+              paddingBottom="8"
+              gap="8"
+              wrap
+              horizontal="center"
+              fitWidth
+              data-border="rounded"
+            >
                 {social.map(
                   (item) =>
                     item.link && (
@@ -443,6 +442,6 @@ export default function About() {
           )}
         </Column>
       </Row>
-    </>
+    </Column>
   );
 }

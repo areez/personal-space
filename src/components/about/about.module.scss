@@ -8,17 +8,7 @@
     }
 }
 
-.avatar {
-    position: sticky;
-    height: fit-content;
-    top: var(--static-space-64);
-}
-
 @media (max-width: breakpoints.$s) {
-    .avatar {
-        top: auto;
-    }
-
     .textAlign {
         text-align: center;
     }
@@ -26,17 +16,4 @@
     .blockAlign {
         align-self: center;
     }
-}
-
-.certificationItem {
-  @media (max-width: 768px) {
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--neutral-border-medium);
-
-    &:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-  }
 }
