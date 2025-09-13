@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import { PersonSchema, BreadcrumbSchema } from "@/components/seo/EnhancedSchema";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -49,15 +50,26 @@ export default function About() {
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
     },
+    {
+      title: about.leadership.title,
+      display: about.leadership.display,
+      items: about.leadership.skills.map((skill) => skill.title),
+    },
   ];
+
+  const breadcrumbItems = [
+    { name: "Home", url: baseURL },
+    { name: "About", url: `${baseURL}${about.path}` }
+  ];
+
   return (
-    <Column maxWidth="m">
+    <>
       <Schema
         as="webPage"
         baseURL={baseURL}
+        path={about.path}
         title={about.title}
         description={about.description}
-        path={about.path}
         image={`/api/og/generate?title=${encodeURIComponent(about.title)}`}
         author={{
           name: person.name,
@@ -65,6 +77,8 @@ export default function About() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
+      <PersonSchema baseURL={baseURL} path={about.path} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       {about.tableOfContent.display && (
         <Column
           left="0"
@@ -194,7 +208,6 @@ export default function About() {
               </Row>
             )}
           </Column>
-
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
               {about.intro.description}
@@ -430,6 +443,6 @@ export default function About() {
           )}
         </Column>
       </Row>
-    </Column>
+    </>
   );
 }

@@ -21,6 +21,8 @@ import { Metadata } from "next";
 import React from "react";
 import { Posts } from "@/components/blog/Posts";
 import { ShareSection } from "@/components/blog/ShareSection";
+import { generateEnhancedMetadata } from "@/components/seo/EnhancedMeta";
+import { BreadcrumbSchema } from "@/components/seo/EnhancedSchema";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "blog", "posts"]);
@@ -44,12 +46,16 @@ export async function generateMetadata({
 
   if (!post) return {};
 
-  return Meta.generate({
+  return generateEnhancedMetadata({
     title: post.metadata.title,
     description: post.metadata.summary,
     baseURL: baseURL,
-    image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
+    image: post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`,
     path: `${blog.path}/${post.slug}`,
+    type: "article",
+    publishedTime: post.metadata.publishedAt,
+    author: person.name,
+    tags: post.metadata.tag ? [post.metadata.tag] : ["Technology", "Software Engineering", "Entrepreneurship"],
   });
 }
 
@@ -69,6 +75,12 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
     post.metadata.team?.map((person) => ({
       src: person.avatar,
     })) || [];
+
+  const breadcrumbItems = [
+    { name: "Home", url: baseURL },
+    { name: "Blog", url: `${baseURL}${blog.path}` },
+    { name: post.metadata.title, url: `${baseURL}${blog.path}/${post.slug}` }
+  ];
 
   return (
     <Row fillWidth>
@@ -93,6 +105,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
               image: `${baseURL}${person.avatar}`,
             }}
           />
+          <BreadcrumbSchema items={breadcrumbItems} />
           <Column maxWidth="s" gap="16" horizontal="center" align="center">
             <SmartLink href="/blog">
               <Text variant="label-strong-m">Blog</Text>

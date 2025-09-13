@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Areez Afsar",
   lastName: "Khan",
   name: "Areez Afsar Khan",
-  role: "Entrepreneur & Tech Consultant",
+  role: "Entrepreneur & Consultant",
   avatar: "/images/avatar.jpg",
   email: "hello@areezafsar.com",
   location: "Asia/Dhaka", // IANA time zone identifier
@@ -45,8 +45,8 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Personal Space`,
-  description: `Showcasing my thoughts and ideas as a ${person.role}`,
+  title: `${person.name} - Entrepreneur & Consultant | Software Engineering & Digital Transformation`,
+  description: `Areez Afsar Khan - Entrepreneur & Technology Consultant from Bangladesh. Expert in cloud solution architecture, digital transformations, product development, and startup leadership. Founder of Valiant Technologies.`,
   headline: <>Benchmarking with the best globally, to build better locally</>,
   featured: {
     display: true,
@@ -79,8 +79,8 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: `About Areez Afsar Khan - Entrepreneur & Consultant`,
+  description: `Learn about Areez Afsar Khan, an experienced entrepreneur and technology consultant from Bangladesh. 15+ years in software engineering, cloud solutions, digital transformation, and startup leadership. IBM-certified with expertise in SaaS, DevOps, and business development.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -383,22 +383,22 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Insights on technology, business, leadership and philosophy",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Tech Blog - Software Engineering, Entrepreneurship & Digital Transformation Insights",
+  description: `Read Areez Afsar Khan's insights on software engineering, entrepreneurship, digital transformation, cloud computing, SaaS development, and startup leadership. Expert perspectives on technology trends and business innovation.`,
 };
 
 const work: Work = {
   path: "/case", // Changed from "/projects" to "/case"
   label: "Case Study",
-  title: `Case Studies – ${person.name}`,
-  description: `Design and dev case studies by ${person.name}`,
+  title: `Software Engineering Case Studies - Cloud Solutions & Digital Transformation Projects`,
+  description: `Explore Areez Afsar Khan's software engineering case studies featuring cloud solutions, digital transformation projects, SaaS development, and enterprise software implementations. Real-world examples of scalable technology solutions.`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  title: `Photo Gallery - Areez Afsar Khan | Events and Projects Initiatives`,
+  description: `Photo gallery showcasing Areez Afsar Khan's journey as an entrepreneur, youth leader and technology consultant. Images from tech events, conferences, leadership roles, and professional milestones in Bangladesh's IT industry.`,
   images: [
     { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
     { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },

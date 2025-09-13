@@ -21,6 +21,9 @@ import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
 import { CaseStudiesCarousel } from "@/components/projects/CaseStudiesCarousel";
+import { generateEnhancedMetadata } from "@/components/seo/EnhancedMeta";
+import { CaseStudySchema } from "@/components/seo/CaseStudySchema";
+import { BreadcrumbSchema } from "@/components/seo/EnhancedSchema";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "case", "case"]);
@@ -44,12 +47,16 @@ export async function generateMetadata({
 
   if (!post) return {};
 
-  return Meta.generate({
+  return generateEnhancedMetadata({
     title: post.metadata.title,
     description: post.metadata.summary,
     baseURL: baseURL,
-    image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
+    image: post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`,
     path: `${work.path}/${post.slug}`,
+    type: "article",
+    publishedTime: post.metadata.publishedAt,
+    author: person.name,
+    tags: ["Software Engineering", "Case Study", "Technology Consulting", "Digital Transformation"],
   });
 }
 
@@ -74,8 +81,26 @@ export default async function Project({
       src: person.avatar,
     })) || [];
 
+  const breadcrumbItems = [
+    { name: "Home", url: baseURL },
+    { name: "Work", url: `${baseURL}${work.path}` },
+    { name: post.metadata.title, url: `${baseURL}${work.path}/${post.slug}` },
+  ];
+
   return (
     <Column as="section" maxWidth="m" horizontal="center" gap="l">
+      <CaseStudySchema
+        title={post.metadata.title}
+        description={post.metadata.summary}
+        baseURL={baseURL}
+        path={`${work.path}/${post.slug}`}
+        publishedAt={post.metadata.publishedAt}
+        image={post.metadata.image}
+        technologies={post.metadata.technologies || []}
+        client={post.metadata.client}
+        duration={post.metadata.duration}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Schema
         as="blogPosting"
         baseURL={baseURL}

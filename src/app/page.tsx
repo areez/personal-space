@@ -15,6 +15,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { ProjectCarouselWrapper } from "@/components/projects/ProjectCarouselWrapper";
 import { Posts } from "@/components/blog/Posts";
+import { WebsiteSchema, OrganizationSchema } from "@/components/seo/EnhancedSchema";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -41,6 +42,14 @@ export default function Home() {
           url: `${baseURL}${about.path}`,
           image: `${baseURL}${person.avatar}`,
         }}
+      />
+      <WebsiteSchema baseURL={baseURL} />
+      <OrganizationSchema 
+        baseURL={baseURL} 
+        path={home.path} 
+        name="Valiant Technologies" 
+        description="Software engineering and IT services firm delivering scalable, cloud-first solutions" 
+        logo="/images/logos/valiant-technologies.svg"
       />
       <Column fillWidth horizontal="center" gap="m">
         <Column maxWidth="s" horizontal="center" align="center">
