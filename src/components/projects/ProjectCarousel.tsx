@@ -22,12 +22,7 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoRotating, setIsAutoRotating] = useState(true);
 
-  if (!projects || projects.length === 0) {
-    return null;
-  }
-
-  const currentProject = projects[currentIndex];
-  const totalProjects = projects.length;
+  const totalProjects = projects?.length || 0;
 
   // Auto-rotation effect
   useEffect(() => {
@@ -41,6 +36,12 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 
     return () => clearInterval(interval);
   }, [isAutoRotating, totalProjects]);
+
+  if (!projects || projects.length === 0) {
+    return null;
+  }
+
+  const currentProject = projects[currentIndex];
 
   const goToPrevious = () => {
     setIsAutoRotating(false); // Stop auto-rotation when user interacts
@@ -67,7 +68,6 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
           key={currentProject.slug} 
           translateY="4" 
           opacity={0}
-          duration={0.6}
           delay={0.1}
           fillWidth
         >
