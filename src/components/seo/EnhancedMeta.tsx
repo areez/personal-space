@@ -87,8 +87,6 @@ export function generateEnhancedMetadata({
       "article:author": author || person.name,
       "article:publisher": person.name,
       ...(tags && { "article:tag": tags.join(", ") }),
-      "og:image:width": "1200",
-      "og:image:height": "630",
       "twitter:image:alt": title,
     },
   };
