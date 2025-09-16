@@ -1,0 +1,63 @@
+---
+title: "FleetTrackr: Security-First Fleet & Inventory Application Hosted Cloud On-Prem"
+publishedAt: "2023-06-25"
+summary: "Case story on designing FleetTrackr, a secure, on-premise fleet and inventory management platform with private cloud orchestration."
+images:
+  - "/images/case/case05-cover-01-secured-fleet-inventory-on-prem.jpg"
+team:
+  - name: "Areez Afsar Khan"
+    role: "Technology Consultant"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/areezafsar/"
+---
+
+# FleetTrackr: Security-First Fleet & Inventory Application Hosted Cloud On-Prem
+
+## Executive Summary
+
+Managing fleets and inventories across multiple operational bases requires precision, resilience, and strong security. Traditional systems—manual logs, spreadsheets, or legacy ERP add-ons—often fail when data is fragmented and when strict security requirements make public cloud unsuitable. **FleetTrackr** was conceived as a **secure, on-premise platform** to unify fleet and inventory management into one integrated system. By combining modern architecture, automated workflows, and isolated infrastructure, it provides both agility and compliance for mission-critical operations.
+
+---
+
+## Objectives
+
+The project aimed to **centralize fleet and inventory operations** into a single system that could replace fragmented and error-prone processes. It also focused on automation of approvals and reporting to reduce manual workloads, while enforcing security-first principles to meet compliance standards. Because public cloud was ruled out for security reasons, the solution required a fully managed **on-premise private cloud** environment. This included datacenter provisioning, orchestration of application hosting, CI/CD pipelines, monitoring tools, and secure networking. By design, the system had to support remote access from tablets and handheld devices without ever exposing sensitive infrastructure to the public internet.
+
+---
+
+## Technology & Architecture
+
+FleetTrackr was designed with enterprise-grade technologies to balance performance and compliance. Built with **Java/XML using the DREAM runtime framework**, the system leveraged modular architecture for adaptability. **PostgreSQL** served as the database backbone, handling complex datasets reliably.
+
+Instead of relying on third-party cloud services, a **dedicated on-premise datacenter** was provisioned. This environment orchestrated everything from virtualized hosting to CI/CD pipelines, enabling streamlined deployments and monitoring. Remote connectivity for field devices—such as tablets and handheld scanners—was enabled through **encrypted tunnels and secure gateways**. Segmented VLANs and VPNs protected communication while maintaining operational flexibility.
+
+By combining these technologies, FleetTrackr delivered **cloud-like agility** from within a private, controlled infrastructure.
+
+---
+
+## Core Features
+
+- **Fleet Tracking**: Real-time monitoring of vehicles, maintenance logs, and usage cycles.
+- **Inventory Control**: Automated tracking of spare parts, consumables, and equipment with alerting.
+- **Role-Based Access Control (RBAC)**: Enforcing least-privilege access policies aligned with the [NIST RBAC Model](https://csrc.nist.gov/projects/role-based-access-control).
+- **Secure Connectivity**: Private tunnels for remote devices connecting into the isolated datacenter.
+- **Resilience & Uptime**: Redundant power, cooling, and automated failover for continuous operations.
+- **Analytics Dashboards**: Intuitive reporting interfaces enabling actionable insights for administrators.
+
+---
+
+## Impact
+
+FleetTrackr has demonstrated significant improvements in operations. Administrative workloads were reduced by nearly **60%** through automation, while transparency improved thanks to centralized, auditable records. The system’s private cloud architecture ensured that sensitive data remained fully under control, avoiding risks associated with public cloud. Most importantly, FleetTrackr established a **future-ready platform** that can expand into predictive maintenance, AI-driven analytics, and advanced supply chain management modules.
+
+---
+
+## References
+
+- [PostgreSQL Enterprise Case Studies](https://www.postgresql.org/about/casestudies/)
+- [NIST RBAC Model](https://csrc.nist.gov/projects/role-based-access-control)
+- [Gartner Research: On-Premise vs Cloud for Sensitive Environments](https://www.gartner.com/en)
+
+---
+
+*This project reflects my role in designing and implementing FleetTrackr as a secure, modern platform that delivers the agility of cloud-native systems while running entirely within an on-premise private cloud.*
