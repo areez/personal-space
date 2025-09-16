@@ -60,16 +60,22 @@ export async function GET(request: Request) {
             gap: "5rem",
           }}
         >
-          <img
-            src={baseURL + person.avatar}
-            alt={`${person.firstName} ${person.lastName} profile picture`}
+          <div
             style={{
               width: "12rem",
               height: "12rem",
-              objectFit: "cover",
               borderRadius: "100%",
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "4rem",
+              fontWeight: "bold",
+              color: "white",
             }}
-          />
+          >
+            {person.firstName.charAt(0)}{person.lastName.charAt(0)}
+          </div>
           <div
             style={{
               display: "flex",
