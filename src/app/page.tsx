@@ -47,7 +47,7 @@ export default function Home() {
       <OrganizationSchema 
         baseURL={baseURL} 
         path={home.path} 
-        name="Valiant Technologies" 
+        name="Valiant Technologies®" 
         description="Software engineering and IT services firm delivering scalable, cloud-first solutions" 
         logo="/images/logos/valiant-technologies.svg"
       />

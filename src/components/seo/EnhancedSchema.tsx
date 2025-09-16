@@ -63,7 +63,7 @@ export function PersonSchema({ baseURL, path }: PersonSchemaProps) {
     },
     worksFor: {
       "@type": "Organization",
-      name: "Valiant Technologies",
+      name: "Valiant Technologies®",
       description: "Software engineering and IT services firm",
       foundingDate: "2012",
       address: {

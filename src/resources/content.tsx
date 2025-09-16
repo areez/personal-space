@@ -46,7 +46,7 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name} - Entrepreneur & Consultant | Software Engineering & Digital Transformation`,
-  description: `Areez Afsar Khan - Entrepreneur & Technology Consultant from Bangladesh. Expert in cloud solution architecture, digital transformations, product development, and startup leadership. Founder of Valiant Technologies.`,
+  description: `Areez Afsar Khan - Entrepreneur & Technology Consultant from Bangladesh. Expert in cloud solution architecture, digital transformations, product development, and startup leadership. Founder of Valiant Technologies®.`,
   headline: <>Benchmarking with the best globally, to build better locally</>,
   featured: {
     display: true,
@@ -122,13 +122,13 @@ const about: About = {
     title: "Work",
     experiences: [
       {
-        company: "Valiant Technologies / Valiant Tech Ltd.",
+        company: "Valiant Technologies® / Valiant Tech Ltd.",
         logo: "/images/logos/valiant-technologies.svg", // Changed from .png to .svg
         timeframe: "2015 - Present",
         role: "Founder & Managing Director",
         achievements: [
           <>
-            Founded Valiant Technologies in 2012 through an idea contest, which has now grown into a
+            Founded Valiant Technologies® in 2012 through an idea contest, which has now grown into a
             software engineering and IT services firm delivering scalable, cloud-first solutions to
             address business challenges for 200+ global clients.
           </>,
