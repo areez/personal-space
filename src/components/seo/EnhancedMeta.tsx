@@ -62,14 +62,15 @@ export function generateEnhancedMetadata({
       description,
       url,
       siteName: `${person.name} - Personal Portfolio`,
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
+   images: [
+          {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: title,
+            type: 'image/png',
+          },
+        ],
       locale,
       ...(publishedTime && { publishedTime }),
       ...(modifiedTime && { modifiedTime }),
