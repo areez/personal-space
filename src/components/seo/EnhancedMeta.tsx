@@ -68,7 +68,6 @@ export function generateEnhancedMetadata({
           width: 1200,
           height: 630,
           alt: title,
-          type: "image/png",
         },
       ],
       locale,
