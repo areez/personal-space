@@ -3,6 +3,7 @@ export { Footer } from "@/components/Footer";
 export { Mailchimp } from "@/components/Mailchimp";
 export { ProjectCard } from "@/components/ProjectCard";
 export { CaseStudiesCarousel } from "@/components/projects/CaseStudiesCarousel";
+export { ParticleEffect } from "@/components/ParticleEffect";
 
 export { HeadingLink } from "@/components/HeadingLink";
 export { RouteGuard } from "@/components/RouteGuard";

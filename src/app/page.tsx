@@ -12,7 +12,7 @@ import {
   Line,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
-import { Mailchimp } from "@/components";
+import { Mailchimp, ParticleEffect } from "@/components";
 import { ProjectCarouselWrapper } from "@/components/projects/ProjectCarouselWrapper";
 import { Posts } from "@/components/blog/Posts";
 import { WebsiteSchema, OrganizationSchema } from "@/components/seo/EnhancedSchema";
@@ -51,8 +51,9 @@ export default function Home() {
         description="Software engineering and IT services firm delivering scalable, cloud-first solutions" 
         logo="/images/logos/valiant-technologies.svg"
       />
-      <Column fillWidth horizontal="center" gap="m">
-        <Column maxWidth="s" horizontal="center" align="center">
+      <Column fillWidth horizontal="center" gap="m" style={{ position: "relative" }}>
+        <ParticleEffect />
+        <Column maxWidth="s" horizontal="center" align="center" style={{ position: "relative", zIndex: 1 }}>
           {home.featured.display && (
             <RevealFx
               fillWidth

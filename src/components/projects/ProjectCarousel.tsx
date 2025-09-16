@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Button,
   Column,
@@ -20,6 +20,7 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
   projects,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoRotating, setIsAutoRotating] = useState(true);
 
   if (!projects || projects.length === 0) {
     return null;
@@ -28,22 +29,48 @@ export const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
   const currentProject = projects[currentIndex];
   const totalProjects = projects.length;
 
+  // Auto-rotation effect
+  useEffect(() => {
+    if (!isAutoRotating || totalProjects <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === totalProjects - 1 ? 0 : prevIndex + 1
+      );
+    }, 8000); // 8 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoRotating, totalProjects]);
+
   const goToPrevious = () => {
+    setIsAutoRotating(false); // Stop auto-rotation when user interacts
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? totalProjects - 1 : prevIndex - 1
     );
+    // Resume auto-rotation after 10 seconds
+    setTimeout(() => setIsAutoRotating(true), 10000);
   };
 
   const goToNext = () => {
+    setIsAutoRotating(false); // Stop auto-rotation when user interacts
     setCurrentIndex((prevIndex) => 
       prevIndex === totalProjects - 1 ? 0 : prevIndex + 1
     );
+    // Resume auto-rotation after 10 seconds
+    setTimeout(() => setIsAutoRotating(true), 10000);
   };
 
   return (
     <Column fillWidth gap="l" className={styles.carouselContainer}>
       <Column fillWidth className={styles.projectContainer}>
-        <RevealFx key={currentProject.slug} translateY="8" fillWidth>
+        <RevealFx 
+          key={currentProject.slug} 
+          translateY="4" 
+          opacity={0}
+          duration={0.6}
+          delay={0.1}
+          fillWidth
+        >
           <ProjectCard
             priority={true}
             href={`/case/${currentProject.slug}`}
