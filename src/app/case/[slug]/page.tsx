@@ -26,7 +26,7 @@ import { CaseStudySchema } from "@/components/seo/CaseStudySchema";
 import { BreadcrumbSchema } from "@/components/seo/EnhancedSchema";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "case", "case"]);
+  const posts = getPosts(["src", "app", "case"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -42,7 +42,7 @@ export async function generateMetadata({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const posts = getPosts(["src", "app", "case", "case"]);
+  const posts = getPosts(["src", "app", "case"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -70,7 +70,7 @@ export default async function Project({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  let post = getPosts(["src", "app", "case", "case"]).find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "case"]).find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
@@ -165,7 +165,7 @@ export default async function Project({
           Read other Case Studies
         </Heading>
         <CaseStudiesCarousel 
-           projects={getPosts(["src", "app", "case", "case"])
+           projects={getPosts(["src", "app", "case"])
              .filter((p) => p.slug !== post.slug)
              .sort((a, b) => new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime())
            }

@@ -6,7 +6,7 @@ interface ProjectsAccordionWrapperProps {
 }
 
 export function ProjectsAccordionWrapper({ excludeSlug }: ProjectsAccordionWrapperProps) {
-  let allProjects = getPosts(["src", "app", "case", "case"]);
+  let allProjects = getPosts(["src", "app", "case"]);
 
   // Exclude the featured project
   if (excludeSlug) {

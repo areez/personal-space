@@ -3,7 +3,7 @@ import { ProjectCarousel } from "./ProjectCarousel";
 import { Project } from "./projectUtils";
 
 export function ProjectCarouselWrapper() {
-  const allProjects = getPosts(["src", "app", "case", "case"]) as Project[];
+  const allProjects = getPosts(["src", "app", "case"]) as Project[];
 
   // Sort by oldest first
   const sortedProjects = allProjects.sort((a, b) => {

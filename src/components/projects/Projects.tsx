@@ -9,7 +9,7 @@ interface ProjectsProps {
 }
 
 export function Projects({ range, exclude, specificSlug }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "case", "case"]);
+  let allProjects = getPosts(["src", "app", "case"]);
 
   // If a specific slug is provided, filter to show only that project
   if (specificSlug) {
