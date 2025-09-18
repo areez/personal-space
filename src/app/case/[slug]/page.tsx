@@ -51,7 +51,7 @@ export async function generateMetadata({
     title: post.metadata.title,
     description: post.metadata.summary,
     baseURL: baseURL,
-    image: post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`,
+    image: (post.metadata.images && post.metadata.images.length > 0) ? post.metadata.images[0] : `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`,
     path: `${work.path}/${post.slug}`,
     type: "article",
     publishedTime: post.metadata.publishedAt,
@@ -95,7 +95,7 @@ export default async function Project({
         baseURL={baseURL}
         path={`${work.path}/${post.slug}`}
         publishedAt={post.metadata.publishedAt}
-        image={post.metadata.image}
+        image={(post.metadata.images && post.metadata.images.length > 0) ? post.metadata.images[0] : undefined}
         technologies={post.metadata.technologies || []}
         client={post.metadata.client}
         duration={post.metadata.duration}
