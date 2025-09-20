@@ -293,7 +293,7 @@ const about: About = {
           </>
         ),
         credlyLink:
-          "https://www.credly.com/earner/earned/badge/05a8ee30-9ee5-4a14-99a9-7e996d25b806",
+          "https://www.credly.com/badges/05a8ee30-9ee5-4a14-99a9-7e996d25b806/public_url",
         tags: [
           { name: "Microsoft Azure", icon: "azure" },
           { name: "Cloud Services", icon: "cloud" },
